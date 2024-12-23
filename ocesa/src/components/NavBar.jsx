@@ -3,15 +3,16 @@ import React from 'react';
 const NavBar = () => {
     return (
         
-        <nav>
-            <ul>
-                <li><a href="/inicio">Inicio</a></li>
-                {/* <li><a href="/novedades">Novedades </a></li> */}
-                {/* <li><a href="/eventos">Eventos</a></li> */}
-                {/* <li><a href="/galeria">Galeria</a></li> */}
-                {/* <li><a href="/boletas">Boletas</a></li> */}
-                <li><a href="/contacto">Nosotros</a></li>
-            </ul>
+        <nav className="navbar">
+            <div className="navbar-container">
+                <h1 className="logo">Mi Sitio</h1>
+                <ul className="menu">
+                <li><Link to="/">Inicio</Link></li>
+                <li><Link to="/about">Acerca</Link></li>
+                <li><Link to="/services">Servicios</Link></li>
+                <li><Link to="/contact">Contacto</Link></li>
+                </ul>
+            </div>
         </nav>
         
     );
