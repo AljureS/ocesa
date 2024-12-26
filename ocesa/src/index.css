@@ -1,3 +1,14 @@
+@font-face{
+  font-family: 'Lemon Milk';
+  src:  url('/fonts/LEMONMILK-Bold.otf') format('opentype'),
+        url('/fonts/LEMONMILK-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root{
+  font-family: 'Lemon Milk', sans-serif;
+}
 
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
