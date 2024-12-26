@@ -19,13 +19,14 @@ const NavBar = () => {
         <nav className="navbar">
             <div className="navbar-container">
                 <img 
-                    src="./og/ocesa.png" 
+                    src="./og/ocesa.webp" 
                     alt="logo-ocesa" 
                     className="logo" 
                     onClick={redirectToHome} // Redirigir al hacer clic en el logo
                     style={{ cursor: 'pointer' }}
                 />
-                {/* <h1 className="logo">Ocesa</h1> */}
+                    {/* <h1 className="logo">Ocesa</h1> */}
+                    
                 <button 
                     className="menu-toggle" 
                     onClick={openMenu} 
