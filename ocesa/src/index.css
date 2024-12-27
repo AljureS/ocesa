@@ -1,13 +1,15 @@
 @font-face{
   font-family: 'Lemon Milk';
   src:  url('/fonts/LEMONMILK-Bold.otf') format('opentype'),
-        url('/fonts/LEMONMILK-Regular.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+        url('/fonts/LEMONMILK-Light.otf') format('opentype');
+  font-weight: lighter;
+  font-style: light;
 }
 
 :root{
   font-family: 'Lemon Milk', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
 }
 
 /* :root {
@@ -19,8 +21,6 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
