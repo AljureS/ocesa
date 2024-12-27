@@ -36,6 +36,7 @@
     left: 0;
     z-index: 1000;
     font-family: 'Lemon Milk', sans-serif;
+    /* font-size: 6rem; */
     margin-right: 100px;
     border-bottom: #3d3d3d 0.5px solid; 
     border-top: 0.5px solid #353535;
@@ -82,6 +83,7 @@
 }
 
 .menu li a {
+    position: relative;
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
@@ -91,15 +93,29 @@
 
 .menu li a:hover {
     color: #9B184E;
-    transform: scale(1.1); /* Color destacado al pasar el mouse */
+    transform: scale(2.1); 
 }
 
-  /* Estilo para dispositivos móviles */
+.menu li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #9B184E;
+    transition: width 0.3s ease-out;
+}
+
+.menu li a:hover::after {
+    width: 100%; 
+}
+
 @media (max-width: 768px) {
     .menu-toggle {
-      display: block;/*  Mostrar el botón de menú */
-      position: relative;
-      z-index: 1000;
+        display: block;
+        position: relative;
+        z-index: 1000;
     }
 
     .menu {

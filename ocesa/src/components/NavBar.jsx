@@ -8,19 +8,12 @@ const NavBar = () => {
     const navigate = useNavigate();
 
     const toggleMenu = () => {
-        // console.log(isOpen);
-        
-        setIsOpen((prev) => !prev)
-        // setIsOpen(!isOpen);
-        // console.log(isOpen);
-        
+        setIsOpen((prev) => !prev);
     };
     useEffect(() => {
         console.log('Valor actualizado de isOpen:', isOpen);
     }, [isOpen]);
     
-    
-
     const redirectToHome = () => {
         navigate('/');
         setIsOpen(false);
@@ -45,14 +38,18 @@ const NavBar = () => {
                     aria-expanded={isOpen}
                     aria-label={isOpen ? 'Cerrar menú' : 'Abrir menú'}
                 >
-                    {isOpen ? 'X': '☰'}
+                    {isOpen ? 'x': '☰'}
                 </button>
 
                 {/* Navigation Menu */}
                 <ul className={`menu ${isOpen ? 'menu-open' : ''}`}>
-                    <MenuItem to="/" label="Inicio" setIsOpen={setIsOpen} />
-                    <MenuItem to="/nosotros" label="Nosotros" setIsOpen={setIsOpen} />
-                    {/* Agregar más rutas según sea necesario */}
+                    <li><Link to="/" onClick={() => setIsOpen(false)} className="hover-line">Inicio</Link></li>
+                    {/* <li><Link to="/novedades">Novedades</Link></li> */}
+                    {/* <li><Link to="/events">Eventos</Link></li> */}
+                    {/* <li><Link to="/galery">Galeria</Link></li> */}
+                    {/* <li><Link to="/greenDistrict">VERDE</Link></li> */}
+                    <li><Link to="/nosotros" onClick={() => setIsOpen(false)} className="hover-line">Nosotros</Link></li>
+
                 </ul>
 
                 
@@ -62,12 +59,12 @@ const NavBar = () => {
 };
 
 // Subcomponente para los elementos del menú
-const MenuItem = ({ to, label, setIsOpen }) => (
-    <li>
-        <Link to={to} onClick={() => setIsOpen(false)}>
-            {label}
-        </Link>
-    </li>
-);
+// const MenuItem = ({ to, label, setIsOpen }) => (
+//     <li>
+//         <Link to={to} onClick={() => setIsOpen(false)}>
+//             {label}
+//         </Link>
+//     </li>
+// );
 
 export default NavBar;
