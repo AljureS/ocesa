@@ -1,9 +1,15 @@
 @font-face{
   font-family: 'Lemon Milk';
-  src:  url('/fonts/LEMONMILK-Bold.otf') format('opentype'),
-        url('/fonts/LEMONMILK-Light.otf') format('opentype');
-  font-weight: lighter;
-  font-style: light;
+  src:  url('/fonts/LEMONMILK-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face{
+  font-family: 'Lemon Milk Regular';
+  src:  url('/fonts/LEMONMILK-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 :root{
