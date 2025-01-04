@@ -1,10 +1,13 @@
 /* Reinicio de márgenes y paddings */
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* position: absolute; */
+}
+
+header{
+    position: sticky;
 }
 
 .logo{
@@ -28,6 +31,7 @@
 
   /* Estilo base para la barra de navegación */
 .navbar {
+    /* position: -webkit-sticky; */
     background-color: #000; /* Fondo negro similar a VML */
     color: #fff;
     width: 100%;
@@ -40,6 +44,15 @@
     margin-right: 100px;
     border-bottom: #3d3d3d 0.5px solid; 
     border-top: 0.5px solid #353535;
+    transition: top 0.3s;
+}
+
+.navbar.hidden {
+    top: -80px; /* Ajustar según la altura del header */
+}
+
+.navbar.visible {
+    top: 0;
 }
 
 .navbar-container {
@@ -74,7 +87,7 @@
     display: flex;
     gap: 2rem;
     transition: transform 0.3s ease-out;
-    /* transform: translateX(100%); */
+    
 }
 
 .menu.menu-open {
@@ -151,4 +164,6 @@
     .menu li a {
         font-size: 1.5rem;
     }
+
+    
 }

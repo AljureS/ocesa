@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Footer.css'; // Importar el archivo CSS
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Footer = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+
     const navigate = useNavigate();
 
     const redirectToHome = () => {
@@ -22,11 +25,11 @@ const Footer = () => {
 
                 <div className='footer-text'>
                     <p className='footerLinks'>
-                        <a href='#'>TÉRMINOS Y CONDICIONES </a>
-                        <>/</>
-                        <a href='#'> POLÍTICA DE PRIVACIDAD </a>
-                        <>/</>
-                        <a href='#'> PRENSA</a>
+                        <Link to="/terminos-y-condiciones">TÉRMINOS Y CONDICIONES</Link>
+                        <> / </>
+                        <Link to="/politica-de-privacidad">POLÍTICA DE PRIVACIDAD</Link>
+                        <> / </>
+                        <a href="mailto:notificaciones-col@ocesa.co">PRENSA</a>
                     </p>
                     <p>© 2023 OCESA COLOMBIA. TODOS LOS DERECHOS RESERVADOS. DESARROLLADO POR OCESA COLOMBIA</p>
                 </div>
