@@ -1,11 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Footer.css'; // Importar el archivo CSS
 import { Link, useNavigate } from 'react-router-dom';
 
 const Footer = () => {
-    const [isOpen, setIsOpen] = useState(false);
-
-
     const navigate = useNavigate();
 
     const redirectToHome = () => {
