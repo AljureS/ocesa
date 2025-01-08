@@ -1,0 +1,134 @@
+.slider-home {
+  margin-top: 5px;
+  height: 87dvh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider-btn {
+  position: absolute;
+  color: white;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.411);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.slider-btn:hover {
+  transition: 0.7s;
+  background-color: #ff408069;
+  filter: drop-shadow(
+    0 0 10px #ff4081 /* Aumentar el tamaño del desenfoque y ajustar el color */
+  );
+}
+
+.prev {
+  left: 1rem; /* Para ubicar el botón a la izquierda */
+}
+
+.next {
+  right: 1rem; /* Botón a la derecha */
+}
+
+/* Capas de imagen */
+.slider-image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* SALIENTE - "old" */
+.slide-old.next {
+  animation: slideOutLeft 1s forwards;
+}
+.slide-old.prev {
+  animation: slideOutRight 1s forwards;
+}
+
+/* ACTUAL - "current" */
+.slide-current.next {
+  animation: slideInRight 1s forwards;
+}
+.slide-current.prev {
+  animation: slideInLeft 1s forwards;
+}
+
+/* Keyframes */
+@keyframes slideOutLeft {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0.25;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutRight {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0.25;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider-home {
+    height: 70vh;
+    width: 90dvw;
+    padding: 0%;
+    overflow: hidden;
+  }
+
+  .slider-image-container img {
+    object-fit: cover;
+    object-position: 20% center;
+  }
+}
