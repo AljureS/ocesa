@@ -1,9 +1,10 @@
 import React from 'react'
-import './OcesaPlaylist.css'
 import 'animate.css'
 import ScrollAnimation from 'react-animate-on-scroll'
+import './OcesaPlaylist.css'
 
 const OcesaPlaylist = () => {
+    
     return (
         <>
         <section className='ocesa-playlist-section'>
