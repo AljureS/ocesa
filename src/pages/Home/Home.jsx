@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React /*, { useEffect }*/ from 'react'
 import MainSlider from '../../sections/Home/MainSlider/MainSlider'
 import Artist from '../../sections/Home/Artist/Artist'
 import SocialMedia from '../../sections/Home/Social/SocialMedia'

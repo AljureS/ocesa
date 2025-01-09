@@ -161,11 +161,11 @@
   }
 
   .prev {
-    left: 0.5rem; /* Para ubicar el botón a la izquierda */
+    left: 0.5rem; 
   }
   
   .next {
-    right: 0.5rem; /* Botón a la derecha */
+    right: 0.5rem; 
   }
 
   .slider-btn:hover {
