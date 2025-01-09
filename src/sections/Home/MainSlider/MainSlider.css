@@ -135,11 +135,10 @@
 
 @media screen and (max-width: 768px) {
   .slider-home {
-    width: 99dvw;
+    width: 100dvw;
     height: 80dvh; /*Para tablet puedo manejar mas*/
     padding: 0%;
     overflow: hidden;
-    margin-left: -14px;
   }
 
   .slider-image-container img {
