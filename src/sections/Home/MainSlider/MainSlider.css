@@ -171,9 +171,6 @@
   .slider-btn:hover {
     transition: 0.3;
     color: #ffffffd5;
-    filter: drop-shadow(0 0 100px #ff408000) /* Más desenfoque */
-          /* drop-shadow(0 50px 0 #ff4081)  Más desplazamiento */
-          drop-shadow(40px 0 10px #ff408000); /* Más intensidad y ajuste */
   
   }
 }
