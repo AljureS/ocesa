@@ -127,6 +127,9 @@
     .logo{
         margin-left: 0.5rem;
     }
+    .logo:hover{
+        margin-left: 0.5rem;
+    }
     .menu-toggle {
         display: block;
         position: relative;
