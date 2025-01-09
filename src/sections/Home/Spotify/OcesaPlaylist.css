@@ -1,0 +1,42 @@
+.ocesa-playlist-section{
+    height: 80dvh;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 90dvw;
+}
+h3{
+    font-family: 'Lemon Milk', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+
+}
+.ocesa-playlist-container{
+    /* height: 100dvh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100dvw;
+}
+
+.ocesa-playlist{
+    border-radius: '12px';
+    width: 60vw;
+    height: 400px;
+    margin-right: 2rem;
+    margin-left: -2rem;
+}
+img{
+    border-radius: '12px';
+}
+
+.pauta{
+    border-radius: 12px;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .ocesa-playlist-container{
+        flex-direction: column;
+    }
+}
