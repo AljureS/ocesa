@@ -151,13 +151,13 @@
   .slider-btn {
     position: absolute;
     color: white;
-    top: 70%;
+    top: 72%;
     transform: translateY(-50%);
     z-index: 10;
-    background-color: rgba(0, 0, 0, 0.226);
+    background-color: none;
     border-radius: 50%;
     border: none;
-    box-shadow: #ffffff5d 0px 0px 0px 0px;
+    
   }
 
   .prev {
