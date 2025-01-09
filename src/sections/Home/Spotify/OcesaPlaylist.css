@@ -16,7 +16,7 @@ h3{
     justify-content: center;
     align-items: center;
     
-    width: 100dvw;
+    width: 90dvw;
 }
 
 .ocesa-playlist{
@@ -24,7 +24,7 @@ h3{
     width: 60vw;
     height: 400px;
     margin-right: 2rem;
-    margin-left: -2rem;
+    margin-left: 5rem;
 }
 
 .pauta{
