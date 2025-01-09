@@ -135,7 +135,7 @@
 
 @media screen and (max-width: 768px) {
   .slider-home {
-    width: 100dvw;
+    width: 101dvw;
     height: 80dvh; /*Para tablet puedo manejar mas*/
     padding: 0%;
     overflow: hidden;
