@@ -1,14 +1,31 @@
 import React, { useEffect, useState } from "react";
 import "./MainSlider.css";
 import events from "../../../data/dataEvents.json";
-import { RiArrowLeftDoubleFill, RiArrowRightDoubleFill } from "react-icons/ri";
-
+import { GrNext, GrPrevious } from "react-icons/gr";
 
 const MainSlider = () => {
+  const [isMobile, setIsMobile] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [oldIndex, setOldIndex] = useState(null); // indice de l img que se va
   const [direction, setDirection] = useState(null); // dureccion de la animacion prev o next
   const [transitioning, setTransitioning] = useState(false); // si hay o no una transicion
+
+  const checkMobile = () => {
+    return window.innerWidth <= 768;
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(checkMobile());
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Check on mount
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     if (!transitioning) return;
@@ -38,7 +55,7 @@ const MainSlider = () => {
     setOldIndex(currentIndex);
     setDirection("prev");
     setTransitioning(true);
-    
+
     setCurrentIndex(
       (prevIndex) => (prevIndex - 1 + events.length) % events.length
     );
@@ -52,7 +69,7 @@ const MainSlider = () => {
     <section className="slider-home">
       <div className="slider">
         <button className="slider-btn prev" onClick={prevSlide}>
-          <RiArrowLeftDoubleFill size={72} />
+          <GrPrevious size={62} />
         </button>
 
         {/* Imagen saliente (solo aparece si oldIndex !== null) */}
@@ -61,7 +78,15 @@ const MainSlider = () => {
             className={`slider-image-container slide-old ${direction}`}
             // onClick() si es necesario
           >
-            <img src={events[oldIndex].banner} alt={events[oldIndex].name} />
+            <img
+              src={
+                isMobile
+                  ? `${events[currentIndex].mobileBanner}`
+                  : `${events[currentIndex].banner}`
+              }
+              alt={events[oldIndex].name}
+              loading="lazy"
+            />
           </div>
         )}
 
@@ -70,13 +95,20 @@ const MainSlider = () => {
           onClick={handleImageClick}
         >
           <img
-            src={events[currentIndex].banner}
+            src={
+              isMobile
+                ? `${events[currentIndex].mobileBanner}`
+                : `${events[currentIndex].banner}`
+            }
             alt={events[currentIndex].name}
+            loading="lazy"
+            // src={events[currentIndex].banner}
+            // alt={events[currentIndex].name}
           />
         </div>
 
         <button className="slider-btn next" onClick={nextSlide}>
-          <RiArrowRightDoubleFill size={72} />
+          <GrNext size={62} />
         </button>
       </div>
     </section>
