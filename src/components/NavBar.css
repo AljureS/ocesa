@@ -13,14 +13,14 @@
 .logo{
     width: 90px;
     /* height: 100px; */
-    margin-left: 40px;
+    margin-left: -1rem;
     filter: drop-shadow(
         0 0 5px #b8b8b8 
-    );
-}
-
-.logo:hover{
-    margin-left: 40px;
+        );
+    }
+    
+.logo:hover{        
+    margin-left: -1rem;
     transition: opacity .5s, filter .5s;
     filter: drop-shadow(
         0 0 10px #FF4081 /* Aumentar el tamaño del desenfoque y ajustar el color */
@@ -124,6 +124,9 @@
 }
 
 @media (max-width: 768px) {
+    .logo{
+        margin-left: 0.5rem;
+    }
     .menu-toggle {
         display: block;
         position: relative;
