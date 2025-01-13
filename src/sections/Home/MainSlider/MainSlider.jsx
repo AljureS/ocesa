@@ -76,7 +76,7 @@ const MainSlider = () => {
         {oldIndex !== null && (
           <div
             className={`slider-image-container slide-old ${direction}`}
-            // onClick() si es necesario
+            onClick={handleImageClick}
           >
             <img
               src={
@@ -85,7 +85,7 @@ const MainSlider = () => {
                   : `${events[currentIndex].banner}`
               }
               alt={events[oldIndex].name}
-              loading="lazy"
+              
             />
           </div>
         )}
@@ -101,7 +101,7 @@ const MainSlider = () => {
                 : `${events[currentIndex].banner}`
             }
             alt={events[currentIndex].name}
-            loading="lazy"
+            
             // src={events[currentIndex].banner}
             // alt={events[currentIndex].name}
           />
