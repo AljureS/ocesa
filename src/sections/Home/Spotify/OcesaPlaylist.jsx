@@ -9,7 +9,7 @@ const OcesaPlaylist = () => {
         <>
         <section className='ocesa-playlist-section'>
             <ScrollAnimation  animateIn="animate__fadeInLeftBig" delay={0} animateOnce={true}>
-                <h3 >Escucha OCESA</h3>
+                <h3>Escucha OCESA</h3> 
             </ScrollAnimation>
 
                 <div className='ocesa-playlist-container'>
@@ -28,7 +28,7 @@ const OcesaPlaylist = () => {
 
                     <ScrollAnimation delay={100} animateIn="animate__zoomIn" animateOnce={true}>
                         <div className='pauta-spotify'>
-                            <img className='pauta' src='/pauta/PAUTA-AQUI.webp' alt='Pauta'/>
+                            <img className='pauta' src='/pauta/PAUTA-AQUI.webp' alt='Pauta' loading='lazy'/>
                         </div>
                     </ScrollAnimation>
                 </div>

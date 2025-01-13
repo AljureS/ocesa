@@ -1,9 +1,9 @@
 import React /*, { useEffect }*/ from 'react'
 import MainSlider from '../../sections/Home/MainSlider/MainSlider'
-import Artist from '../../sections/Home/Artist/Artist'
 import SocialMedia from '../../sections/Home/Social/SocialMedia'
 import OcesaPlaylist from '../../sections/Home/Spotify/OcesaPlaylist'
 import './Home.css'
+import EventsSlider from '../../sections/Home/EventsSlider/EventsSlider'
 // import Rellax from 'rellax'
 
 const Home = () => {
@@ -19,7 +19,7 @@ const Home = () => {
     return (
         <>
                     <MainSlider></MainSlider>
-                    <Artist></Artist>
+                    <EventsSlider></EventsSlider>
                     <SocialMedia></SocialMedia>
                     <OcesaPlaylist></OcesaPlaylist>
             {/* <div className='rellax-contanier'>
