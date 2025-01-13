@@ -1,23 +1,22 @@
 .ocesa-playlist-section{
     height: 80dvh;
-    margin-top: 2.5rem;
+    margin-top: 4rem;
     margin-bottom: 2rem;
-    width: 97dvw;
+    width: 98dvw;
 }
 h3{
     font-family: 'Lemon Milk', sans-serif;
     font-size: 2rem;
     text-align: center;
     padding-bottom: 1rem;
-    margin-right: 1rem;
+    margin-right: 2rem;
 }
-
 .ocesa-playlist-container{
     /* height: 100dvh; */
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    margin-top: 1rem;
     width: 90dvw;
 }
 
@@ -29,24 +28,19 @@ h3{
     margin-left: 5rem;
 }
 
-
 .pauta{
     border-radius: 12px;
-    
-    
+    height: 400px;
+    width: 30vw;
 }
 .pauta:hover{
-    transform: scale(1.025);
-    transition: 0.75s;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(155,24,78,0.33);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(155,24,78,0.33);
-    box-shadow: 10px 10px 5px 0px rgba(155,24,78,0.33);
+    
 }
 
 @media screen and (max-width: 768px) {
     .ocesa-playlist-section{
         height: 110dvh;
-        margin-top: 4.5rem;
+        margin-top: 6rem;
         margin-bottom: 2rem;
     }
 
@@ -54,12 +48,14 @@ h3{
         flex-direction: column;
         align-items: center;
     }
-    img{
-        width: 80dvw;
-    }
+    
     .ocesa-playlist{
-        width: 80dvw;
+        width: 90dvw;
         margin-right: 0rem;
         margin-left: 0rem;
+    }
+    .pauta{
+        width: 90dvw !important;
+        height: 400px;
     }
 }

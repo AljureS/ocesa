@@ -8,14 +8,14 @@ const OcesaPlaylist = () => {
     return (
         <>
         <section className='ocesa-playlist-section'>
-            <ScrollAnimation  animateIn="animate__fadeInLeftBig" delay={0} animateOnce={true}>
+            <ScrollAnimation  animateIn="animate__fadeInLeftBig" animateOut='animate__backOutRight' delay={0} animateOnce={false}>
                 <h3>Escucha OCESA</h3> 
             </ScrollAnimation>
 
                 <div className='ocesa-playlist-container'>
-                    <ScrollAnimation animateIn="animate__fadeInUp" delay={200}  animateOnce={true}>
+                    <ScrollAnimation animateIn="animate__fadeInUp" animateOut='animate__zoomOut'  animateOnce={false}>
                         <div className='spotify-container'>
-                            <iframe
+                            <iframe 
                                 className='ocesa-playlist'
                                 style={{ borderRadius: '12px', border: '0' }}
                                 src="https://open.spotify.com/embed/playlist/4pZ2RieXjMWURPCUfij6ew?utm_source=generator"
@@ -26,7 +26,7 @@ const OcesaPlaylist = () => {
                         </div>
                     </ScrollAnimation>
 
-                    <ScrollAnimation delay={100} animateIn="animate__zoomIn" animateOnce={true}>
+                    <ScrollAnimation  animateIn="animate__zoomIn" animateOut='animate__fadeOut' animateOnce={false}>
                         <div className='pauta-spotify'>
                             <img className='pauta' src='/pauta/PAUTA-AQUI.webp' alt='Pauta' loading='lazy'/>
                         </div>

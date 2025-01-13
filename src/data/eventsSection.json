@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Shakira",
+        "artistiImage":"events/miniaturaSH.webp",
+        "url": "https://www.eticket.co/eventos.aspx?idartista=793&utm_source=ocesawebpage&utm_medium=referral+",
+        "available": true
+    },
+    {
+        "name": "Andrea Bocellii",
+        "artistiImage":"",
+        "url": "https://www.eticket.co/eventos.aspx?idartista=804&utm_source=ocesawebpage&utm_medium=referral+"
+    },
+    {
+        "name": "",
+        "artistiImage":"",
+        "url": ""
+    }
+]

@@ -1,15 +1,22 @@
 import React from 'react'
-// import events from '../../../data/dataEvents.json'
+import ScrollAnimation from 'react-animate-on-scroll'
+import 'animate.css'
+import events from '../../../data/eventsSection.json'
 import './EventsSlider.css'
 const EventsSlider = () => {
     return (
         <>
             <section className='events-slider-section'>
-                <div>
-                    <h3>EVENTOS</h3>
-                </div>
+                <ScrollAnimation  animateIn="animate__zoomInRight" animateOut='animate__zoomOutRight' animateOnce={false}>
+                    <div>
+                        <h3>EVENTOS</h3>
+                    </div>
+                </ScrollAnimation>
+
                 <div className='wrapper1'>
-                    <div className='card event-1'>Event 1</div>
+                    <div className='card event-1'>
+                        <img src={`${events[0].artistiImage}`} alt="" />
+                    </div>
                     <div className='card event-2'>Event 2</div>
                     <div className='card event-3'>Event 3</div>
                     <div className='card event-4'>Event 4</div>
