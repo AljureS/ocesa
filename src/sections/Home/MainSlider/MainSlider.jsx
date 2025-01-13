@@ -62,7 +62,7 @@ const MainSlider = () => {
   };
 
   const handleImageClick = () => {
-    window.location.href = events[currentIndex].url; // Redirigir a la URL externa especificada en el objeto de eventos
+    window.location.href = events[currentIndex].url; 
   };
 
   return (
@@ -81,11 +81,11 @@ const MainSlider = () => {
             <img
               src={
                 isMobile
-                  ? `${events[currentIndex].mobileBanner}`
-                  : `${events[currentIndex].banner}`
+                  ? `${events[oldIndex].mobileBanner}`
+                  : `${events[oldIndex].banner}`
               }
               alt={events[oldIndex].name}
-              
+              loading="lazy"
             />
           </div>
         )}
@@ -101,9 +101,8 @@ const MainSlider = () => {
                 : `${events[currentIndex].banner}`
             }
             alt={events[currentIndex].name}
+            loading="lazy"
             
-            // src={events[currentIndex].banner}
-            // alt={events[currentIndex].name}
           />
         </div>
 
