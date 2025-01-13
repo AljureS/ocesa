@@ -2,7 +2,7 @@
     height: 80dvh;
     margin-top: 4rem;
     margin-bottom: 2rem;
-    width: 98dvw;
+    width: 97dvw;
 }
 h3{
     font-family: 'Lemon Milk', sans-serif;
@@ -32,9 +32,6 @@ h3{
     border-radius: 12px;
     height: 400px;
     width: 30vw;
-}
-.pauta:hover{
-    
 }
 
 @media screen and (max-width: 768px) {
