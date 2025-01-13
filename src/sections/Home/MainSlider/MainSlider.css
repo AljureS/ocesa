@@ -1,6 +1,6 @@
 .slider-home {
   margin: -6px;
-  height: 92dvh;
+  height: 94dvh;
   width: fit-screen;
   display: flex;
   justify-content: center;
@@ -74,10 +74,10 @@
 
 /* SALIENTE - "old" */
 .slide-old.next {
-  animation: slideOutLeft 1s forwards;
+  animation: slideOutLeft 1s ease-in-out;
 }
 .slide-old.prev {
-  animation: slideOutRight 1s forwards;
+  animation: slideOutRight 1s ease-in-out ;
 }
 
 /* ACTUAL - "current" */
@@ -92,11 +92,11 @@
 @keyframes slideOutLeft {
   0% {
     transform: translateX(0);
-    opacity: 1;
+    opacity: 0;
   }
   100% {
     transform: translateX(-100%);
-    opacity: 0.25;
+    opacity: 1;
   }
 }
 
@@ -114,18 +114,18 @@
 @keyframes slideOutRight {
   0% {
     transform: translateX(0);
-    opacity: 1;
+    opacity: 0;
   }
   100% {
     transform: translateX(100%);
-    opacity: 0.25;
+    opacity: 1;
   }
 }
 
 @keyframes slideInLeft {
   0% {
     transform: translateX(-100%);
-    opacity: 0;
+    opacity: 1;
   }
   100% {
     transform: translateX(0);
