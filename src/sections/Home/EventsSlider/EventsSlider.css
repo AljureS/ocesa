@@ -1,8 +1,97 @@
-.events-slider-section{
+.events-slider-section {
     height: 100dvh;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     width: 97dvw;
+    /* padding: 1rem; */
+    /* margin-bottom: 2rem; */
+}
+
+h3{
     padding: 1rem;
 }
+
+.wrapper1, .wrapper2 {
+    display: flex;
+    width: 101.25dvw;
+    height: 47%;
+    overflow: hidden;
+    justify-content: space-evenly;
+    margin-left: -2rem;
+}
+
+.card {
+    flex: 1;
+    /* min-width: 100px;
+    min-height: 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    transition: flex 0.3s ease;
+}
+
+.event-1 {
+    background-color: black;
+}
+
+.event-2 {
+    background-color: rgb(146, 146, 146);
+    color: black;
+}
+
+.event-3 {
+    background-color: rgb(0, 0, 0);
+}
+
+.event-4 {
+    background-color: rgb(146, 146, 146);
+    color: black;
+}
+
+.event-5 {
+    background-color: rgb(0, 0, 0);
+}
+
+.event-6 {
+    background-color: black;
+}
+
+.event-7 {
+    background-color: rgb(146, 146, 146);
+    color: black;
+}
+
+.event-8 {
+    background-color: rgb(0, 0, 0);
+}
+
+.event-9 {
+    background-color: rgb(146, 146, 146);
+    color: black;
+}
+
+.event-10 {
+    background-color: rgb(0, 0, 0);
+}
+
+.card:hover {
+    flex: 2;
+    transition: 0.75s;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper1 {
+        display: block;
+        height: 100%;
+        width: 100.75dvw;
+        margin-left: -1rem;
+    }
+    .wrapper2 {
+        display: none;
+    }
+    .card {
+        flex: 1;
+        height: 20%;
+    }
+}
+
