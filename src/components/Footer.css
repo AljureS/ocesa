@@ -1,4 +1,5 @@
 .footer {
+    box-sizing: border-box;
     width:100vw; /*si se vuelve a ver raro paila */
     font-family: 'Lemon Milk Regular', sans-serif;
     font-weight: normal;
