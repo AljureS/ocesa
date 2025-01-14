@@ -1,6 +1,5 @@
 .ocesa-playlist-section{
     height: 80dvh;
-    margin-top: 4rem;
     margin-bottom: 2rem;
     width: 97dvw;
 }
@@ -16,8 +15,12 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     width: 90dvw;
+}
+
+.ocesa-playlist-title{
+    margin-top: 3rem;
 }
 
 .ocesa-playlist{

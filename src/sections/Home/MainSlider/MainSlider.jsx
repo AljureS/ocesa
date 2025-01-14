@@ -67,7 +67,7 @@ const MainSlider = () => {
 
   return (
     <section className="slider-home">
-      <div className="slider">
+      <div className="slider-main">
         <button className="slider-btn prev" onClick={prevSlide}>
           <GrPrevious size={62} />
         </button>
@@ -84,6 +84,7 @@ const MainSlider = () => {
                   ? `${events[oldIndex].mobileBanner}`
                   : `${events[oldIndex].banner}`
               }
+              className="main-slider-image"
               alt={events[oldIndex].name}
               loading="lazy"
             />
@@ -101,8 +102,8 @@ const MainSlider = () => {
                 : `${events[currentIndex].banner}`
             }
             alt={events[currentIndex].name}
+            className="main-slider-image"
             loading="lazy"
-            
           />
         </div>
 
