@@ -1,19 +1,19 @@
 .events-slider-section {
-    height: 100dvh;
+    height: 110dvh;
     width: 97dvw;
+    margin-top: 2rem;
     /* padding: 1rem; */
     /* margin-bottom: 2rem; */
 }
 
 h3{
-    /* color: white; */
     padding: 1rem;
 }
 
 .wrapper1, .wrapper2 {
     display: flex;
-    width: 100vw;
-    height: 50%;
+    width: 100dvw;
+    height: 48%;
     overflow: hidden;
     justify-content: space-evenly;
     margin-left: -2rem;
@@ -89,10 +89,10 @@ img{
 }
 
 @media screen and (max-width: 768px) {
-    .wrapper1 {
+    .wrapper1, .wrapper2 {
         display: block;
         height: 100%;
-        width: 100.75dvw;
+        width: 100dvw;
         margin-left: -1rem;
     }
     .wrapper2 {

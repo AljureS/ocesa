@@ -36,7 +36,7 @@ h3{
 
 @media screen and (max-width: 768px) {
     .ocesa-playlist-section{
-        height: 110dvh;
+        height: 130dvh;
         margin-top: 6rem;
         margin-bottom: 2rem;
     }
@@ -52,7 +52,8 @@ h3{
         margin-left: 0rem;
     }
     .pauta{
-        width: 90dvw !important;
+        width: 90dvw ;
         height: 400px;
+        margin-bottom: 5rem;
     }
 }
