@@ -15,8 +15,6 @@ const OcesaPlaylist = () => {
                 <div className='ocesa-playlist-container'>
                     <ScrollAnimation animateIn="animate__fadeInUp" animateOut='animate__zoomOut'  animateOnce={false}>
                         <div className='spotify-container'>
-                            {/* <iframe 
-                            style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6Dhh1Lv1mk4M9MpwB0AclL?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> */}
                             <iframe 
                                 className='ocesa-playlist'
                                 style={{ borderRadius: '12px', border: '0' }}
