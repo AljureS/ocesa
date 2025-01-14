@@ -17,10 +17,22 @@ const EventsSlider = () => {
                     <div className='card event-1'>
                         <img src={`${events[0].artistiImage}`} alt="" />
                     </div>
-                    <div className='card event-2'>Event 2</div>
-                    <div className='card event-3'>Event 3</div>
-                    <div className='card event-4'>Event 4</div>
-                    <div className='card event-5'>Event 5</div>
+                    <div className='card event-2'>
+                        <img src={`${events[0].artistiImage}`} alt="" />
+
+                    </div>
+                    <div className='card event-3'>
+                        <img src={`${events[0].artistiImage}`} alt="" />
+
+                    </div>
+                    <div className='card event-4'>
+                        <img src={`${events[0].artistiImage}`} alt="" />
+
+                    </div>
+                    <div className='card event-5'>
+                        <img src={`${events[0].artistiImage}`} alt="" />
+
+                    </div>
                 </div>
                 <div className='wrapper2'>
                     <div className='card event-6'>Event 6</div>
