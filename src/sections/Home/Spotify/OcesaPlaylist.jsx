@@ -8,17 +8,19 @@ const OcesaPlaylist = () => {
     return (
         <>
         <section className='ocesa-playlist-section'>
-            <ScrollAnimation  animateIn="animate__fadeInLeftBig" animateOut='animate__backOutRight' delay={0} animateOnce={false}>
+            <ScrollAnimation  animateIn="animate__fadeInLeftBig"  delay={0} animateOnce={true}>
                 <h3>Escucha OCESA</h3> 
             </ScrollAnimation>
 
                 <div className='ocesa-playlist-container'>
                     <ScrollAnimation animateIn="animate__fadeInUp" animateOut='animate__zoomOut'  animateOnce={false}>
                         <div className='spotify-container'>
+                            {/* <iframe 
+                            style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6Dhh1Lv1mk4M9MpwB0AclL?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> */}
                             <iframe 
                                 className='ocesa-playlist'
                                 style={{ borderRadius: '12px', border: '0' }}
-                                src="https://open.spotify.com/embed/playlist/4pZ2RieXjMWURPCUfij6ew?utm_source=generator"
+                                src="https://open.spotify.com/embed/playlist/6Dhh1Lv1mk4M9MpwB0AclL?utm_source=generator"
                                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                                 loading="lazy"
                                 title="Spotify Playlist"

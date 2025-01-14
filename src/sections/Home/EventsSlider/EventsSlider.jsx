@@ -7,7 +7,7 @@ const EventsSlider = () => {
     return (
         <>
             <section className='events-slider-section'>
-                <ScrollAnimation  animateIn="animate__zoomInRight" animateOut='animate__zoomOutRight' animateOnce={false}>
+                <ScrollAnimation  animateIn="animate__zoomInRight" animateOnce={true}>
                     <div>
                         <h3>EVENTOS</h3>
                     </div>
