@@ -19,10 +19,7 @@ const EventsSlider = () => {
                         <img src={`${eventsLong[0].artistiImage}`} alt={eventsLong[0].name} />
                         <div className="overlay-content">
                             <p>{eventsLong[0].name}</p>
-                            <div className='button-container'>
-                                <ButtonSpecial />
-
-                            </div>
+                            <ButtonSpecial />
                         </div>
                     </div>
                     <div className='card-event event-2'>
