@@ -9,7 +9,9 @@ const OcesaPlaylist = () => {
         <>
         <section className='ocesa-playlist-section'>
             <ScrollAnimation  animateIn="animate__fadeInLeftBig"  delay={0} animateOnce={true}>
-                <h3>Escucha OCESA</h3> 
+                <div className='ocesa-playlist-title'>
+                    <h3>Escucha OCESA</h3> 
+                </div>
             </ScrollAnimation>
 
                 <div className='ocesa-playlist-container'>

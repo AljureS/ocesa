@@ -1,45 +1,53 @@
 import React from 'react'
 import ScrollAnimation from 'react-animate-on-scroll'
 import 'animate.css'
-import events from '../../../data/eventsSection.json'
+import eventsLong from '../../../data/eventsSection.json'
 import './EventsSlider.css'
+import ButtonSpecial from '../../../components/Button'
 const EventsSlider = () => {
     return (
         <>
             <section className='events-slider-section'>
                 <ScrollAnimation  animateIn="animate__zoomInRight" animateOnce={true}>
-                    <div>
+                    <div className='event-title'>
                         <h3>EVENTOS</h3>
                     </div>
                 </ScrollAnimation>
 
                 <div className='wrapper1'>
-                    <div className='card event-1'>
-                        <img src={`${events[0].artistiImage}`} alt="" />
+                    <div className='card-event event-1'>
+                        <img src={`${eventsLong[0].artistiImage}`} alt={eventsLong[0].name} />
+                        <div className="overlay-content">
+                            <p>{eventsLong[0].name}</p>
+                            <div className='button-container'>
+                                <ButtonSpecial />
+
+                            </div>
+                        </div>
                     </div>
-                    <div className='card event-2'>
-                        <img src={`${events[0].artistiImage}`} alt="" />
+                    <div className='card-event event-2'>
+                        <img src={`${eventsLong[0].artistiImage}`} alt="" />
 
                     </div>
-                    <div className='card event-3'>
-                        <img src={`${events[0].artistiImage}`} alt="" />
+                    <div className='card-event event-3'>
+                        <img src={`${eventsLong[0].artistiImage}`} alt="" />
 
                     </div>
-                    <div className='card event-4'>
-                        <img src={`${events[0].artistiImage}`} alt="" />
+                    <div className='card-event event-4'>
+                        <img src={`${eventsLong[0].artistiImage}`} alt="" />
 
                     </div>
-                    <div className='card event-5'>
-                        <img src={`${events[0].artistiImage}`} alt="" />
+                    <div className='card-event event-5'>
+                        <img src={`${eventsLong[0].artistiImage}`} alt="" />
 
                     </div>
                 </div>
                 <div className='wrapper2'>
-                    <div className='card event-6'>Event 6</div>
-                    <div className='card event-7'>Event 7</div>
-                    <div className='card event-8'>Event 8</div>
-                    <div className='card event-9'>Event 9</div>
-                    <div className='card event-10'>Event 10</div>
+                    <div className='card-event event-6'>Event 6</div>
+                    <div className='card-event event-7'>Event 7</div>
+                    <div className='card-event event-8'>Event 8</div>
+                    <div className='card-event event-9'>Event 9</div>
+                    <div className='card-event event-10'>Event 10</div>
                 </div>
             </section>
         </>
