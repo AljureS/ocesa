@@ -91,6 +91,9 @@ li{
 }
 
 @media (max-width: 768px) {
+    .footer{
+        width: 100dvw;
+    }
     .footer-container{
         flex-direction: column;
         align-items: center;
