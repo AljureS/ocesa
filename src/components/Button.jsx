@@ -1,11 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
+// import eventsLong from '../../../data/eventsSection.json'
 
 const ButtonSpecial = () => {
+    // const handleImageClick = () => {
+    //     window.location.href = eventsLong[currentIndex].url; 
+    // };
+
     return (
         <StyledWrapper>
             <div className="voltage-button">
-                <button>Comprar</button>
+                <button>Ver más</button>
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 234.6 61.3" preserveAspectRatio="none" xmlSpace="preserve">
                     <filter id="glow">
                         <feGaussianBlur className="blur" result="coloredBlur" stdDeviation={2} />
@@ -58,11 +63,11 @@ const StyledWrapper = styled.div`
     background:rgba(155, 24, 79, 0.43);
 }
 
-  .voltage-button button:hover + svg, .voltage-button button:hover + svg + .dots {
+.voltage-button button:hover + svg, .voltage-button button:hover + svg + .dots {
     opacity: 1;
-  }
+}
 
-  .voltage-button svg {
+.voltage-button svg {
     display: block;
     position: absolute;
     top: -0.75em;
@@ -73,118 +78,118 @@ const StyledWrapper = styled.div`
     opacity: 0;
     transition: opacity 0.4s;
     transition-delay: 0.1s;
-  }
+}
 
-  .voltage-button svg path {
+.voltage-button svg path {
     stroke-dasharray: 100;
     filter: url("#glow");
-  }
+}
 
-  .voltage-button svg path.line-1 {
+.voltage-button svg path.line-1 {
     stroke: #9B184E;
     stroke-dashoffset: 0;
     animation: spark-1 3s linear infinite;
-  }
+}
 
-  .voltage-button svg path.line-2 {
+.voltage-button svg path.line-2 {
     stroke: #870F46;
     stroke-dashoffset: 500;
     animation: spark-2 3s linear infinite;
-  }
+}
 
-  .voltage-button .dots {
+.voltage-button .dots {
     opacity: 0;
     transition: opacity 0.3s;
     transition-delay: 0.4s;
-  }
+}
 
-  .voltage-button .dots .dot {
+.voltage-button .dots .dot {
     width: 1rem;
     height: 1rem;
     background: white;
     border-radius: 100%;
     position: absolute;
     opacity: 0;
-  }
+}
 
-  .voltage-button .dots .dot-1 {
+.voltage-button .dots .dot-1 {
     top: 0;
     left: 20%;
     animation: fly-up 3s linear infinite;
-  }
+}
 
-  .voltage-button .dots .dot-2 {
+.voltage-button .dots .dot-2 {
     top: 0;
     left: 55%;
     animation: fly-up 3s linear infinite;
     animation-delay: 0.5s;
-  }
+}
 
-  .voltage-button .dots .dot-3 {
+.voltage-button .dots .dot-3 {
     top: 0;
     left: 80%;
     animation: fly-up 3s linear infinite;
     animation-delay: 1s;
-  }
+}
 
-  .voltage-button .dots .dot-4 {
+.voltage-button .dots .dot-4 {
     bottom: 0;
     left: 30%;
     animation: fly-down 3s linear infinite;
     animation-delay: 2.5s;
-  }
+}
 
-  .voltage-button .dots .dot-5 {
+.voltage-button .dots .dot-5 {
     bottom: 0;
     left: 65%;
     animation: fly-down 3s linear infinite;
     animation-delay: 1.5s;
-  }
+}
 
-  @keyframes spark-1 {
+@keyframes spark-1 {
     to {
-      stroke-dashoffset: -1000;
+        stroke-dashoffset: -1000;
     }
-  }
+}
 
-  @keyframes spark-2 {
+@keyframes spark-2 {
     to {
-      stroke-dashoffset: -500;
+        stroke-dashoffset: -500;
     }
-  }
+}
 
-  @keyframes fly-up {
+@keyframes fly-up {
     0% {
-      opacity: 0;
-      transform: translateY(0) scale(0.2);
+        opacity: 0;
+        transform: translateY(0) scale(0.2);
     }
 
     5% {
-      opacity: 1;
-      transform: translateY(-1.5rem) scale(0.4);
+        opacity: 1;
+        transform: translateY(-1.5rem) scale(0.4);
     }
 
     10%, 100% {
-      opacity: 0;
-      transform: translateY(-3rem) scale(0.2);
+        opacity: 0;
+        transform: translateY(-3rem) scale(0.2);
     }
-  }
+}
 
-  @keyframes fly-down {
+@keyframes fly-down {
     0% {
-      opacity: 0;
-      transform: translateY(0) scale(0.2);
+        opacity: 0;
+        transform: translateY(0) scale(0.2);
     }
 
     5% {
-      opacity: 1;
-      transform: translateY(1.5rem) scale(0.4);
+        opacity: 1;
+        transform: translateY(1.5rem) scale(0.4);
     }
 
     10%, 100% {
-      opacity: 0;
-      transform: translateY(3rem) scale(0.2);
+        opacity: 0;
+        transform: translateY(3rem) scale(0.2);
     }
-  }`;
+}`;
 
 export default ButtonSpecial;
