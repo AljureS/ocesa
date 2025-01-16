@@ -135,26 +135,33 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+    .events-slider-section{
+        height: 150vh;
+    }
+    .card-event {
+        flex: 1;
+        height: 25vh;
+    }
+    img {
+        object-position: top;
+    }
     .card-event:hover{
         height: fit-content;
     }
 
-    .wrapper1, .wrapper2 {
+    .wrapper1 {
+        position: sticky;
         display: block;
-        height: 100%;
+        height: fit-content;
         width: 100dvw;
         margin-left: -1rem;
+
     }
     .wrapper2 {
         display: none;
-    }
-    .card-event {
-        flex: 1;
-        height: 25%;
-        
-    }
-    img {
-        object-position: top;
+        visibility: hidden;
+        opacity: 0;
+
     }
 }
 
