@@ -13,7 +13,7 @@ const Home = () => {
     //         center: false, 
     //         wrapper: null, 
     //         vertical: true, 
-    //         horizontal: false
+    //         horizontal: false   
     //     })
     // })
     return (

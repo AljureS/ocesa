@@ -12,7 +12,7 @@ const OcesaPlaylist = () => {
                 <div className='ocesa-playlist-title'>
                     <h3>Escucha OCESA</h3> 
                 </div>
-            </ScrollAnimation>
+            </ScrollAnimation>   
 
                 <div className='ocesa-playlist-container'>
                     <ScrollAnimation animateIn="animate__fadeInUp" animateOut='animate__zoomOut'  animateOnce={false}>

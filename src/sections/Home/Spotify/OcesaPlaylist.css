@@ -38,13 +38,9 @@ h3{
 }
 
 @media screen and (max-width: 768px) {
-    .ocesa-playlist-title{
-        /* margin-top: 3rem; */
-    }
     .ocesa-playlist-section{
         height: 130dvh;
-        margin-top: 6rem;
-        margin-bottom: 2rem;
+        margin-top: 2rem;
     }
 
     .ocesa-playlist-container{
