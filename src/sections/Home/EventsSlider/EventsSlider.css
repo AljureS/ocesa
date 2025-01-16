@@ -1,5 +1,5 @@
 .events-slider-section {
-    height: 130dvh;
+    height: 110dvh;
     width: 97dvw;
     margin-top: 2rem;
 }
@@ -132,12 +132,12 @@ img {
 
 @media screen and (max-width: 768px) {
     .events-slider-section{
-        height: 130vh;
-        position: relative;
+        height: inherit;
+        margin-bottom: -1rem;
     }
     .card-event {
         flex: 1;
-        height: 20vh;
+        height: 25vh;
     }
     img {
         object-position: top;
@@ -154,8 +154,8 @@ img {
 
     }
     .wrapper2 {
-        /* display: none; */
-        /* visibility: hidden; */
+        display: none;
+        visibility: hidden;
         opacity: 0;
 
     }
