@@ -1,8 +1,8 @@
 [
     {
         "name": "Jurassic Park",
-        "artistiImage":"",
-        "url": "",
+        "artistiImage":"events/descarga.jpeg",
+        "url": "https://www.eticket.co/?utm_source=ocesa&utm_medium=banner+&utm_campaign=ocesa_events+",
         "available": false
     },
     {
@@ -13,20 +13,20 @@
     },
     {
         "name": "Andrea Bocelli",
-        "artistiImage":"",
+        "artistiImage":"events/MiniaturaAB.webp",
         "url": "https://www.eticket.co/eventos.aspx?idartista=804&utm_source=ocesawebpage&utm_medium=referral+",
         "available": true
     },
     {
         "name": "Aventura",
-        "artistiImage":"",
-        "url": "",
+        "artistiImage": "events/MiniaturaAventura.webp",
+        "url": "https://www.eticket.co/?utm_source=ocesa&utm_medium=banner+&utm_campaign=ocesa_events+",
         "available": false
     },
     {
         "name": "Paul McCartney",
-        "artistiImage":"",
-        "url": "",
+        "artistiImage": "events/MiniaturaPaul.webp",
+        "url": "https://www.eticket.co/?utm_source=ocesa&utm_medium=banner+&utm_campaign=ocesa_events+",
         "available": false
     },
     {

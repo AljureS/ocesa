@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const ButtonSpecial = ({url }) => {
+const ButtonSpecial = ({url}) => {
     return (
         <StyledWrapper> 
             <div className="voltage-button">
@@ -38,13 +38,13 @@ const ButtonSpecial = ({url }) => {
 const StyledWrapper = styled.div`
 .voltage-button {
     position: relative;
-    z-index: 100; /* Add this line */
+    display: inline-block;
 }
 
 .voltage-button button {
     color: white;
     background: #9B184E;
-    padding: 1rem 3rem 1rem 3rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
     border-radius: 5rem;
     border: 3px solid rgba(255, 255, 255, 0.49);
     font-family: 'Lemon Milk Regular', sans-serif;
