@@ -112,7 +112,7 @@ img {
 .event-5 {
     background-color: rgb(0, 0, 0);
 }
-
+*/
 .event-6 {
     background-color: black;
 }
@@ -133,7 +133,7 @@ img {
 
 .event-10 {
     background-color: rgb(0, 0, 0);
-} */
+} 
 
 @media screen and (max-width: 768px) {
     .events-slider-section{
@@ -150,8 +150,24 @@ img {
     img {
         object-position: top;
     }
-    .card-event:hover{
+    .card-event:active  {
         height: fit-content;
+    }
+    .card-event:hover  {
+        height: fit-content;
+    }
+
+
+    .card-event:visited img {
+        transform: scale(1); 
+        filter: brightness(1.2) blur(4px) grayscale(100%); 
+        transition: all 0.5s ease; 
+    }
+    .card-event:visited {
+        flex: 1.3;
+        background: #870F46; /* Aplica el color de fondo */
+        box-shadow: 0 0 80px 5px #870F46; /* Sombra de la tarjeta */
+        transition: box-shadow 0.5s ease, flex 0.5s ease; 
     }
 
     .wrapper1 {
