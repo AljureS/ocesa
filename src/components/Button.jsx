@@ -1,16 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-// import eventsLong from '../../../data/eventsSection.json'
+import PropTypes from 'prop-types';
 
-const ButtonSpecial = () => {
-    // const handleImageClick = () => {
-    //     window.location.href = eventsLong[currentIndex].url; 
-    // };
-
+const ButtonSpecial = ({url }) => {
     return (
-        <StyledWrapper>
+        <StyledWrapper> 
             <div className="voltage-button">
-                <button>Ver más</button>
+                <button onClick={()=>{window.location.href = url}}>Ver más</button>
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 234.6 61.3" preserveAspectRatio="none" xmlSpace="preserve">
                     <filter id="glow">
                         <feGaussianBlur className="blur" result="coloredBlur" stdDeviation={2} />
@@ -191,5 +187,10 @@ const StyledWrapper = styled.div`
         transform: translateY(3rem) scale(0.2);
     }
 }`;
+
+// Validación de props
+ButtonSpecial.propTypes = {
+    url: PropTypes.string.isRequired, // La prop `url` debe ser un string y es obligatoria
+};
 
 export default ButtonSpecial;
