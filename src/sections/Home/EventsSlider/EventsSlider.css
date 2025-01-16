@@ -1,11 +1,7 @@
 .events-slider-section {
-    height: 110dvh;
+    height: 130dvh;
     width: 97dvw;
     margin-top: 2rem;
-    /* padding: 1rem; */
-    /* margin-bottom: 2rem; */
-    
-
 }
 
 h3 {
@@ -136,11 +132,12 @@ img {
 
 @media screen and (max-width: 768px) {
     .events-slider-section{
-        height: 150vh;
+        height: 130vh;
+        position: relative;
     }
     .card-event {
         flex: 1;
-        height: 25vh;
+        height: 20vh;
     }
     img {
         object-position: top;
@@ -150,7 +147,6 @@ img {
     }
 
     .wrapper1 {
-        position: sticky;
         display: block;
         height: fit-content;
         width: 100dvw;
@@ -158,8 +154,8 @@ img {
 
     }
     .wrapper2 {
-        display: none;
-        visibility: hidden;
+        /* display: none; */
+        /* visibility: hidden; */
         opacity: 0;
 
     }
