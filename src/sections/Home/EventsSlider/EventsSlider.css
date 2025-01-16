@@ -48,21 +48,18 @@ img {
 
 .card-event img {
     height: 100%;
-    transition: all 0.5s ease; /* Define la transición para la imagen */
-    transform: scale(1.1); /* Estado inicial */
-    /* object-fit: cover;  */
+    transition: all 0.5s ease; 
+    transform: scale(1.1); 
 }
 
 .card-event:hover img {
-    transform: scale(1); /* Aumenta ligeramente el tamaño al hacer hover */
+    transform: scale(1); 
     filter: brightness(1.2) blur(4px) grayscale(100%); 
     transition: all 0.5s ease; 
 }
 
 .overlay-content {
     position: absolute; 
-    /* display: flex; */
-    /* justify-content: column; */
     align-items: center;
     text-align: center; 
     background: none;
@@ -138,6 +135,10 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+    .card-event:hover{
+        height: fit-content;
+    }
+
     .wrapper1, .wrapper2 {
         display: block;
         height: 100%;
