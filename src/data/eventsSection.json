@@ -1,5 +1,11 @@
 [
     {
+        "name": "Jurassic Park",
+        "artistiImage":"",
+        "url": "",
+        "available": false
+    },
+    {
         "name": "Shakira",
         "artistiImage":"events/miniaturaSH.webp",
         "url": "https://www.eticket.co/eventos.aspx?idartista=793&utm_source=ocesawebpage&utm_medium=referral+",
@@ -12,49 +18,43 @@
         "available": true
     },
     {
-        "name": "",
+        "name": "Aventura",
         "artistiImage":"",
         "url": "",
         "available": false
     },
     {
-        "name": "",
+        "name": "Paul McCartney",
         "artistiImage":"",
         "url": "",
         "available": false
     },
     {
-        "name": "",
+        "name": "Ferxxo",
         "artistiImage":"",
         "url": "",
         "available": false
     },
     {
-        "name": "",
+        "name": "RBD",
         "artistiImage":"",
         "url": "",
         "available": false
     },
     {
-        "name": "",
+        "name": "The Weeknd",
         "artistiImage":"",
         "url": "",
         "available": false
     },
     {
-        "name": "",
+        "name": "Messi",
         "artistiImage":"",
         "url": "",
         "available": false
     },
     {
-        "name": "",
-        "artistiImage":"",
-        "url": "",
-        "available": false
-    },
-    {
-        "name": "",
+        "name": "Alicia Keys",
         "artistiImage":"",
         "url": "",
         "available": false
