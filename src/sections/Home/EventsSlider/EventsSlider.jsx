@@ -9,7 +9,7 @@ const EventsSlider = () => {
         <>
             <section className='events-slider-section'>
                 <ScrollAnimation  animateIn="animate__zoomInRight" animateOnce={true}>
-                    <div className='event-title'>
+                    <div className='event-slider-section-title'>
                         <h3>EVENTOS</h3>
                     </div>
                 </ScrollAnimation>
@@ -18,7 +18,7 @@ const EventsSlider = () => {
                     <div className='card-event event-1'>
                         <img src={`${eventsLong[0].artistiImage}`} alt={eventsLong[0].name} />
                         <div className="overlay-content">
-                            <p>{eventsLong[0].name}</p>
+                            <p className='event-name'>{eventsLong[0].name}</p>
                             <ButtonSpecial />
                         </div>
                     </div>
