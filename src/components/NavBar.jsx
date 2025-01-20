@@ -53,7 +53,7 @@ const NavBar = () => {
                         aria-expanded={isOpen}
                         aria-label={isOpen ? 'Cerrar menú' : 'Abrir menú'}
                     >
-                        {isOpen ? <GrClose size={40}/> : <RiMenuUnfold4Fill size={40}/>}
+                        {isOpen ? <GrClose size={40}/> : <RiMenuUnfold4Fill size={41}/>}
                     </button>
 
                     {/* Navigation Menu */}

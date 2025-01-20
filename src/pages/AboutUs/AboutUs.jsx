@@ -15,7 +15,7 @@ const AboutUs = () => {
 
             <section className='about-us-2'>
                 <div className= 'about-us-container-2'>
-                    <p>Somos OCESA, la promotora de emociones más grande de México y Latinoamérica. Hoy, formamos parte de Live Nation, la promotora de entretenimiento más importante del mundo.</p>
+                    <p className='about-us-text'>Somos OCESA, la promotora de emociones más grande de México y Latinoamérica. Hoy, formamos parte de Live Nation, la promotora de entretenimiento más importante del mundo.</p>
                 </div>
             </section>
 
