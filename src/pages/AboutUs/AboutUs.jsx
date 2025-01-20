@@ -1,17 +1,20 @@
 import React from 'react'
 import './AboutUs.css'
+import ScrollAnimation from 'react-animate-on-scroll'
+
 
 const AboutUs = () => {
     return (
         <>
             <section className='about-us-1'>
-                <div className='about-us-container'>
-                    <h3>¿Quienes somos?</h3>
+                <div  className='about-us-container-1'>
+                    <img className='concierto' src="aboutUs/concierto.jpg" alt="concierto" />
+                    <h3 id='title-about' className='animate__animated animate__jackInTheBox'>¿Quiénes somos?</h3>
                 </div>
             </section>
 
             <section className='about-us-2'>
-                <div className= 'about-us-container'>
+                <div className= 'about-us-container-2'>
                     <p>Somos OCESA, la promotora de emociones más grande de México y Latinoamérica. Hoy, formamos parte de Live Nation, la promotora de entretenimiento más importante del mundo.</p>
                 </div>
             </section>
