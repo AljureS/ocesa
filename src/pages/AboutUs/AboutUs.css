@@ -1,6 +1,12 @@
 .about-us-1{
     height: 100dvh;
     padding-top: 1rem;
+    align-content: center;
+}
+
+.about-us-2{
+    height: 40dvh;
+    padding-top: 1rem;
 }
 
 .about-us-container{
@@ -9,6 +15,5 @@
 
 @media screen and (max-width: 768px){
     .about-us-container{
-        display: flex;
     }
 }
