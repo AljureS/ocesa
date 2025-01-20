@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './NavBar.css';
-import { MdMenuOpen } from "react-icons/md";
-import { CgCloseR } from "react-icons/cg";
-
+import { GrClose } from "react-icons/gr";
+import { RiMenuUnfold4Fill } from "react-icons/ri";
 
 const NavBar = () => {
     // POr el nnav bar 
@@ -54,7 +53,7 @@ const NavBar = () => {
                         aria-expanded={isOpen}
                         aria-label={isOpen ? 'Cerrar menú' : 'Abrir menú'}
                     >
-                        {isOpen ? <CgCloseR size={40}/> : <MdMenuOpen size={40}/>}
+                        {isOpen ? <GrClose size={40}/> : <RiMenuUnfold4Fill size={40}/>}
                     </button>
 
                     {/* Navigation Menu */}
