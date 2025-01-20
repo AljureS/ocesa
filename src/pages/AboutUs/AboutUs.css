@@ -1,0 +1,14 @@
+.about-us-1{
+    height: 100dvh;
+    padding-top: 1rem;
+}
+
+.about-us-container{
+    display: flex;
+}
+
+@media screen and (max-width: 768px){
+    .about-us-container{
+        display: flex;
+    }
+}
