@@ -32,7 +32,7 @@ const AboutUs = () => {
             </section>
 
             <section className='contact'>
-                <ScrollAnimation animateIn="animate__flipInX" animateOut='animate__fadeOutRightBig'  animateOnce={false}>
+                <ScrollAnimation animateIn="animate__flipInX" animateOut='animate__fadeOutUp'  animateOnce={false}>
                     <div className="outer">
                         <div className="dot"></div>
                         <div className="card">
