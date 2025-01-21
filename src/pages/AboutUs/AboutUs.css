@@ -85,8 +85,12 @@
 
 .contact{
     width: 97vw;
+    height: 90dvh;
     display: flex;
     justify-content: center;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 .outer {

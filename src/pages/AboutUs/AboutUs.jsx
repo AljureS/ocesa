@@ -8,7 +8,7 @@ const AboutUs = () => {
             <section className='about-us-1'>
                 <div  className='about-us-container-1'>
                     <img className='concierto' src="aboutUs/concierto.jpg" alt="concierto" />
-                    <h3 id='title-about' className='animate__animated animate__slideInDown'>¿Quiénes somos?</h3>
+                    <h3 id='title-about' className='animate__animated animate__slideInDown animate__delay-0.5s'>¿Quiénes somos?</h3>
                 </div>
             </section>
 
