@@ -55,7 +55,7 @@ const AboutUs = () => {
                                             <img className="logoContact" src="og/ocesa.webp" alt="Ocesa Colombia" width="100"/>
                                             {/* </a> */}
                                         </div> 
-                                        © COLOMBIA DERECHOS RESERVADOS
+                                        COLOMBIA DERECHOS RESERVADOS © 
                                     </div>
 
                                 </div>
