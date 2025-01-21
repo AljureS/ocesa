@@ -1,7 +1,5 @@
 import React from 'react'
 import './AboutUs.css'
-import ScrollAnimation from 'react-animate-on-scroll'
-
 
 const AboutUs = () => {
     return (
