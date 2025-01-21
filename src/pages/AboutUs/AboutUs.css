@@ -84,13 +84,13 @@
 }
 
 .contact{
-    width: 100vw;
+    width: 97vw;
     display: flex;
     justify-content: center;
 }
 
 .outer {
-    width: 54%;
+    width: 98%;
     border-radius: 10px;
     padding: 1px;
     background: radial-gradient(circle 230px at 0% 0%, #ffffff, #0c0d0d);
