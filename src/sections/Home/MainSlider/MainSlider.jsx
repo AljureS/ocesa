@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./MainSlider.css";
 import events from "../../../data/dataEvents.json";
 import { GrNext, GrPrevious } from "react-icons/gr";
+import { useSwipeable } from "react-swipeable";
 
 const MainSlider = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -65,8 +66,15 @@ const MainSlider = () => {
     window.location.href = events[currentIndex].url; 
   };
 
+  const handlers = useSwipeable({
+    onSwipedLeft: nextSlide,
+    onSwipedRight: prevSlide,
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true
+  });
+
   return (
-    <section className="slider-home">
+    <section className="slider-home" {...handlers}>
       <div className="slider-main">
         <button className="slider-btn prev" onClick={prevSlide}>
           <GrPrevious size={62} />
