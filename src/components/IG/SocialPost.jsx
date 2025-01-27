@@ -8,7 +8,7 @@ const SocialPost = ({postURL}) => {
         <div className="card">
             <div className="tools">
                 <div className="circle">
-                    <span className="red box"></span>
+                    <span className="red box"></span> 
                 </div>
                 <div className="circle">
                     <span className="yellow box"></span>
