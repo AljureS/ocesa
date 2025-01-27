@@ -1,7 +1,7 @@
 .ocesa-playlist-section{
     height: 80dvh;
     margin-bottom: 2rem;
-    width: 97dvw;
+    width: 100dvw;
 }
 h3{
     font-family: 'Lemon Milk', sans-serif;
@@ -16,7 +16,7 @@ h3{
     justify-content: center;
     align-items: center;
     margin-top: 1.5rem;
-    width: 90dvw;
+    width: 100dvw;
 } 
 
 .ocesa-playlist-title{

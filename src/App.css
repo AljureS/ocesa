@@ -13,7 +13,7 @@ body {
 main {
   flex: 1;
   margin-top: 50px; /* Ajustar según la altura del header */
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 /* * {

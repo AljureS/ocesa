@@ -1,11 +1,10 @@
 import React from 'react'
-import {InstagramEmbed} from 'react-social-embeds';
+import {InstagramEmbed} from 'react-social-media-embed';
 import './SocialPost.css'
 import PropTypes from 'prop-types';
 
-const SocialPost = ({postURL}) => {
+const SocialPost = ({postURL}) => { 
     return (
-        
         <div className="card">
             <div className="tools">
                 <div className="circle">
@@ -19,7 +18,7 @@ const SocialPost = ({postURL}) => {
                 </div>
             </div>
             <div className="card__content">
-                    <InstagramEmbed url={postURL} width="100%" />
+                    <InstagramEmbed url={postURL}  />
             </div>
         </div>
     )

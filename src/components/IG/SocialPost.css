@@ -1,17 +1,18 @@
-    /* From Uiverse.io by JaydipPrajapati1910 */
     .card {
-    width: 190px;
-    height: 254px;
-    margin: 0 auto;
-    background: linear-gradient(0deg, #000, #272727);
+    
+    background: black;
     border-radius: 8px;
     z-index: 1;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
     }
 
     .tools {
-    display: flex;
-    align-items: center;
-    padding: 9px;
+        display: flex;
+        width: 100%;
+        margin-left: 3rem;
+        padding: 0.3rem;
+
     }
 
     .circle {
