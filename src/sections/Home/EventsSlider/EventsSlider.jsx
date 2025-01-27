@@ -17,7 +17,7 @@ const EventsSlider = () => {
                 <div className='wrapper1'>
                     {eventsLong.slice(0, eventsLong.length - 5).map((event, i) => (
                             <div key={i} className={`card-event event-${i + 1}`}>
-                                <img src={`${event.artistiImage}`} alt={event.name} loading='lazy' />
+                                <img className='event-image' src={`${event.artistiImage}`} alt={event.name} loading='lazy' />
                                 <div className="overlay-content">
                                     <p className='event-name'>{event.name}</p>
                                     <div>

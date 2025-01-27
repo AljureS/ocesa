@@ -1,61 +1,61 @@
 [
     {
-        "name": "Jurassic Park",
-        "artistiImage":"events/descarga.jpeg",
-        "url": "https://www.eticket.co/?utm_source=ocesa&utm_medium=banner+&utm_campaign=ocesa_events+",
-        "available": false
-    },
-    {
         "name": "Shakira",
-        "artistiImage":"events/miniaturaSH.webp",
+        "artistiImage":"events/miniaturaShakira.jpg",
         "url": "https://www.eticket.co/eventos.aspx?idartista=793&utm_source=ocesawebpage&utm_medium=referral+",
         "available": true
     },
     {
         "name": "Andrea Bocelli",
-        "artistiImage":"events/MiniaturaAB.webp",
+        "artistiImage":"events/miniaturaAndreaBocelli.jpg",
         "url": "https://www.eticket.co/eventos.aspx?idartista=804&utm_source=ocesawebpage&utm_medium=referral+",
         "available": true
     },
     {
         "name": "Aventura",
-        "artistiImage": "events/MiniaturaAventura.webp",
+        "artistiImage": "events/miniaturaAventura.jpg",
         "url": "https://www.eticket.co/?utm_source=ocesa&utm_medium=banner+&utm_campaign=ocesa_events+",
         "available": false
     },
     {
         "name": "Paul McCartney",
-        "artistiImage": "events/MiniaturaPaul.webp",
+        "artistiImage": "events/miniaturaPaulMcCartney.jpg",
         "url": "https://www.eticket.co/?utm_source=ocesa&utm_medium=banner+&utm_campaign=ocesa_events+",
         "available": false
     },
     {
         "name": "Ferxxo",
-        "artistiImage":"",
+        "artistiImage":"events/miniaturaFerxxo.jpg",
         "url": "",
         "available": false
     },
     {
         "name": "RBD",
-        "artistiImage":"",
+        "artistiImage":"events/miniaturaRBD.jpg",
         "url": "",
         "available": false
     },
     {
         "name": "The Weeknd",
-        "artistiImage":"",
+        "artistiImage":"events/MiniaturaTheWeeknd.jpg",
         "url": "",
         "available": false
     },
     {
-        "name": "Messi",
-        "artistiImage":"",
+        "name": "Cirque du Soleil Messi10",
+        "artistiImage":"events/MiniaturaMessi10.jpg",
         "url": "",
         "available": false
     },
     {
         "name": "Alicia Keys",
-        "artistiImage":"",
+        "artistiImage":"events/miniatuiraAlicicaKeys.jpg",
+        "url": "",
+        "available": false
+    },
+    {
+        "name": "Cold Play",
+        "artistiImage":"events/minniaturaColdPlay.jpg",
         "url": "",
         "available": false
     }
