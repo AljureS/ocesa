@@ -22,7 +22,7 @@ function App() {
 
           <Route path='/terminos-y-condiciones' element={<TerminosCondiciones/>}/>
           <Route path='/politica-de-privacidad' element={<TerminosCondiciones/>}/>
-          {/* <Route path='/prensa' element={<TerminosCondiciones/>}/> */}
+          
         </Routes> 
       </main>
       

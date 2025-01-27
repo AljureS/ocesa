@@ -1,22 +1,23 @@
 .ocesa-playlist-section{
     height: 80dvh;
     margin-bottom: 2rem;
-    width: 97dvw;
+    width: 100dvw;
 }
 h3{
     font-family: 'Lemon Milk', sans-serif;
     font-size: 2rem;
     text-align: center;
     padding-bottom: 1rem;
-    margin-right: 2rem;
+    /* margin-right: 2rem; */
 }
+
 .ocesa-playlist-container{
     /* height: 100dvh; */
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 1.5rem;
-    width: 90dvw;
+    width: 100dvw;
 } 
 
 .ocesa-playlist-title{
@@ -28,7 +29,7 @@ h3{
     width: 60vw;
     height: 400px;
     margin-right: 2rem;
-    margin-left: 5rem;
+    /* margin-left: 5rem; */
 }
 
 .pauta{
