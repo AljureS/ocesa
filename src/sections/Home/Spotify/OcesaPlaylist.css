@@ -8,8 +8,9 @@ h3{
     font-size: 2rem;
     text-align: center;
     padding-bottom: 1rem;
-    margin-right: 2rem;
+    /* margin-right: 2rem; */
 }
+
 .ocesa-playlist-container{
     /* height: 100dvh; */
     display: flex;
@@ -28,7 +29,7 @@ h3{
     width: 60vw;
     height: 400px;
     margin-right: 2rem;
-    margin-left: 5rem;
+    /* margin-left: 5rem; */
 }
 
 .pauta{

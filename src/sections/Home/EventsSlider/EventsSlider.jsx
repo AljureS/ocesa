@@ -7,7 +7,7 @@ import ButtonSpecial from '../../../components/Button'
 const EventsSlider = () => {
     
     return (
-        <>
+        <> 
             <section className='events-slider-section'>
                 <ScrollAnimation  animateIn="animate__zoomInRight" animateOnce={true}>
                     <div className='event-slider-section-title'>
