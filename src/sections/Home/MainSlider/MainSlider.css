@@ -74,18 +74,18 @@
 
 /* SALIENTE - "old" */
 .slide-old.next {
-  animation: slideOutLeft 1s ease-in-out;
+  animation: slideOutLeft 0.75s ease-in-out;
 }
 .slide-old.prev {
-  animation: slideOutRight 1s ease-in-out ;
+  animation: slideOutRight 0.75s ease-in-out ;
 }
 
 /* ACTUAL - "current" */
 .slide-current.next {
-  animation: slideInRight 1s forwards;
+  animation: slideInRight 0.75s forwards;
 }
 .slide-current.prev {
-  animation: slideInLeft 1s forwards;
+  animation: slideInLeft 0.75s forwards;
 }
 
 /* Keyframes */
