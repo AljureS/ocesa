@@ -79,14 +79,14 @@ const MainSlider = () => {
 
   // Swipe handlers
   const handlers = useSwipeable({
-    onSwipedLeft: nextSlide,
-    onSwipedRight: prevSlide,
+    onSwipedLeft: () => document.getElementById('slider-container').scrollBy({ left: 300, behavior: 'smooth' }),
+    onSwipedRight: () => document.getElementById('slider-container').scrollBy({ left: -300, behavior: 'smooth' }),
     preventDefaultTouchmoveEvent: true,
     trackMouse: true
   });
 
   return (
-    <section className="slider-home" {...handlers}>
+    <section className="slider-home" id="slider-container" {...handlers}>
       <div className="slider-main">
         <button className="slider-btn prev" onClick={prevSlide} aria-label="Previous">
           <GrPrevious size={62} />
