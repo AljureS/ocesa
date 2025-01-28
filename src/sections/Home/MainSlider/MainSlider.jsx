@@ -1,71 +1,83 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback, useMemo } from "react";
 import "./MainSlider.css";
 import events from "../../../data/dataEvents.json";
 import { GrNext, GrPrevious } from "react-icons/gr";
 import { useSwipeable } from "react-swipeable";
 
+// Duración de la transición en ms (debe coincidir con CSS)
+const TRANSITION_DURATION = 1000;
+
 const MainSlider = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [oldIndex, setOldIndex] = useState(null); // indice de l img que se va
-  const [direction, setDirection] = useState(null); // dureccion de la animacion prev o next
-  const [transitioning, setTransitioning] = useState(false); // si hay o no una transicion
+  const [oldIndex, setOldIndex] = useState(null);
+  const [direction, setDirection] = useState(null);
+  const [transitioning, setTransitioning] = useState(false);
 
-  const checkMobile = () => {
-    return window.innerWidth <= 768;
-  };
-
+  // Handler de resize optimizado
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(checkMobile());
+      setIsMobile(window.innerWidth <= 768);
     };
 
     window.addEventListener("resize", handleResize);
-    handleResize(); // Check on mount
+    handleResize(); // Verificación inicial
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Memoizar URLs de imágenes
+  const currentImage = useMemo(() => (
+    isMobile 
+      ? events[currentIndex]?.mobileBanner 
+      : events[currentIndex]?.banner
+  ), [isMobile, currentIndex]);
+
+  const oldImage = useMemo(() => {
+    if (oldIndex === null) return null;
+    return isMobile 
+      ? events[oldIndex]?.mobileBanner 
+      : events[oldIndex]?.banner;
+  }, [isMobile, oldIndex]);
+
+  // Control de transiciones
   useEffect(() => {
     if (!transitioning) return;
 
     const timeout = setTimeout(() => {
-      // La animación ya terminó
       setTransitioning(false);
-      setOldIndex(null); // ocultamos por completo el anterior
-      setDirection(null); // reseteamos la dirección
-    }, 1000);
+      setOldIndex(null);
+      setDirection(null);
+    }, TRANSITION_DURATION);
 
     return () => clearTimeout(timeout);
   }, [transitioning]);
 
-  const nextSlide = () => {
+  // Navegación memoizada
+  const nextSlide = useCallback(() => {
     if (transitioning) return;
-
+    
     setOldIndex(currentIndex);
     setDirection("next");
     setTransitioning(true);
-    setCurrentIndex((currentIndex) => (currentIndex + 1) % events.length);
-  };
+    setCurrentIndex(prev => (prev + 1) % events.length);
+  }, [transitioning, currentIndex]);
 
-  const prevSlide = () => {
+  const prevSlide = useCallback(() => {
     if (transitioning) return;
-
+    
     setOldIndex(currentIndex);
     setDirection("prev");
     setTransitioning(true);
+    setCurrentIndex(prev => (prev - 1 + events.length) % events.length);
+  }, [transitioning, currentIndex]);
 
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + events.length) % events.length
-    );
-  };
+  // Handler de clic memoizado
+  const handleImageClick = useCallback(() => {
+    window.location.href = events[currentIndex]?.url;
+  }, [currentIndex]);
 
-  const handleImageClick = () => {
-    window.location.href = events[currentIndex].url; 
-  };
-
+  // Swipe handlers
   const handlers = useSwipeable({
     onSwipedLeft: nextSlide,
     onSwipedRight: prevSlide,
@@ -76,24 +88,20 @@ const MainSlider = () => {
   return (
     <section className="slider-home" {...handlers}>
       <div className="slider-main">
-        <button className="slider-btn prev" onClick={prevSlide}>
+        <button className="slider-btn prev" onClick={prevSlide} aria-label="Previous">
           <GrPrevious size={62} />
         </button>
 
-        {/* Imagen saliente (solo aparece si oldIndex !== null) */}
         {oldIndex !== null && (
           <div
             className={`slider-image-container slide-old ${direction}`}
             onClick={handleImageClick}
+            aria-hidden="true"
           >
             <img
-              src={
-                isMobile
-                  ? `${events[oldIndex].mobileBanner}`
-                  : `${events[oldIndex].banner}`
-              }
+              src={oldImage}
               className="main-slider-image"
-              alt={events[oldIndex].name}
+              alt={events[oldIndex]?.name}
               loading="lazy"
             />
           </div>
@@ -104,18 +112,14 @@ const MainSlider = () => {
           onClick={handleImageClick}
         >
           <img
-            src={
-              isMobile
-                ? `${events[currentIndex].mobileBanner}`
-                : `${events[currentIndex].banner}`
-            }
-            alt={events[currentIndex].name}
+            src={currentImage}
+            alt={events[currentIndex]?.name}
             className="main-slider-image"
             loading="lazy"
           />
         </div>
 
-        <button className="slider-btn next" onClick={nextSlide}>
+        <button className="slider-btn next" onClick={nextSlide} aria-label="Next">
           <GrNext size={62} />
         </button>
       </div>
