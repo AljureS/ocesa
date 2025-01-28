@@ -36,7 +36,7 @@ const MainSlider = () => {
       setTransitioning(false);
       setOldIndex(null); // ocultamos por completo el anterior
       setDirection(null); // reseteamos la dirección
-    }, 1000);
+    }, 750);
 
     return () => clearTimeout(timeout);
   }, [transitioning]);
