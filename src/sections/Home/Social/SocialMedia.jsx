@@ -14,7 +14,7 @@ const SocialMedia = () => {
 
     return (
         <section className="social-media">
-            <div>
+            <div className='social-media-title'>
                 <h3>Redes Sociales</h3>
             </div>
 

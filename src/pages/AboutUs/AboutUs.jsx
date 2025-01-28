@@ -72,7 +72,7 @@ const AboutUs = () => {
             </section>
 
             <section className='about-us-social-media'>
-
+            
             </section>
         </>
     )

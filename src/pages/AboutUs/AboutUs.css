@@ -1,9 +1,8 @@
 .about-us-1{
-    height: 91dvh;
+    height: 93dvh;
     width: 100vw;
     padding-top: 0;
     align-content: center;
-    margin-left: -1rem;
     position: relative; /* Add this line */
 }
 #title-about{
@@ -25,7 +24,8 @@
 
 .about-us-2{
     height: 110dvh;
-    padding-top: 1rem;
+    
+    /* padding-top: 1rem; */
 }
 
 .about-us-text{
@@ -63,7 +63,6 @@
     flex-wrap: wrap;
     padding: 1.5rem;
     margin-top: -1rem;
-    margin-left: -1rem;
     color: #fff;
     width: 100vw;
     height: 100%;
@@ -254,6 +253,7 @@
         flex-direction: column;
     }
     .contact{
+        padding: 1rem;
         width: 100%;
         display: flex;
         justify-content: center;
