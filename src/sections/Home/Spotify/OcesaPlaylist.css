@@ -1,5 +1,5 @@
 .ocesa-playlist-section{
-    height: 80dvh;
+    height: 80vh;
     margin-bottom: 2rem;
     width: 100dvw;
 }
@@ -40,7 +40,7 @@ h3{
 
 @media screen and (max-width: 768px) {
     .ocesa-playlist-section{
-        height: 130dvh;
+        height: 130vh;
         margin-top: 2rem;
     }
 

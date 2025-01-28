@@ -1,7 +1,9 @@
 .events-slider-section {
     height: 110dvh;
     width: 100vw;
-    margin-top: 2rem;
+    padding-top: 2rem;
+    background-color: #000000;
+    color: white;
 }
 /*  */
 
