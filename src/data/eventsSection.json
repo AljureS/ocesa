@@ -26,37 +26,37 @@
     {
         "name": "Ferxxo",
         "artistiImage":"events/miniaturaFerxxo.jpg",
-        "url": "",
+        "url": "https://www.eticket.co/?utm_source=ocesa&utm_medium=banner+&utm_campaign=ocesa_events+",
         "available": false
     },
     {
         "name": "RBD",
         "artistiImage":"events/miniaturaRBD.jpg",
-        "url": "",
+        "url": "https://www.eticket.co/?utm_source=ocesa&utm_medium=banner+&utm_campaign=ocesa_events+",
         "available": false
     },
     {
         "name": "The Weeknd",
         "artistiImage":"events/MiniaturaTheWeeknd.jpg",
-        "url": "",
+        "url": "https://www.eticket.co/?utm_source=ocesa&utm_medium=banner+&utm_campaign=ocesa_events+",
         "available": false
     },
     {
         "name": "Cirque du Soleil Messi10",
         "artistiImage":"events/MiniaturaMessi10.jpg",
-        "url": "",
+        "url": "https://www.eticket.co/?utm_source=ocesa&utm_medium=banner+&utm_campaign=ocesa_events+",
         "available": false
     },
     {
         "name": "Alicia Keys",
         "artistiImage":"events/miniatuiraAlicicaKeys.jpg",
-        "url": "",
+        "url": "https://www.eticket.co/?utm_source=ocesa&utm_medium=banner+&utm_campaign=ocesa_events+",
         "available": false
     },
     {
         "name": "Cold Play",
         "artistiImage":"events/minniaturaColdPlay.jpg",
-        "url": "",
+        "url": "https://www.eticket.co/?utm_source=ocesa&utm_medium=banner+&utm_campaign=ocesa_events+",
         "available": false
     }
 ]
