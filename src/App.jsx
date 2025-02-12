@@ -5,6 +5,7 @@ import NavBar from './components/NavBar'
 import TerminosCondiciones from './pages/FooterContent/TerminosCondiciones'
 import Home from './pages/Home/Home'
 import AboutUs from './pages/AboutUs/AboutUs'
+import Eventos from './pages/Eventos/Eventos'
 
 function App() {
   return (
@@ -14,8 +15,8 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/eventos" element={<Eventos />} />
           {/* <Route path="/novedades" element={<News />} /> */}
-          {/* <Route path="/events" element={<Events />} /> */}
           {/* <Route path="/galery" element={<Galery />} /> */}
           {/* <Route path="/greenDistrict" element={<GreenDistrict />} /> */}
           <Route path="/nosotros" element={<AboutUs />} />

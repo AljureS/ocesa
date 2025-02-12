@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./MainSlider.css";
-import events from "../../../data/dataEvents.json";
+// import events from "../../../data/dataEvents.json";
+import events from "../../../data/dataHidden.json";
 import { GrNext, GrPrevious } from "react-icons/gr";
 import { useSwipeable } from "react-swipeable";
 
