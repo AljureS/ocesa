@@ -1,0 +1,40 @@
+/* VerticalSliderEvent.css */
+
+/* El contenedor se posiciona relativo y oculta lo que sobresalga */
+.container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Todas las secciones se posicionan de manera absoluta para superponerse */
+  .container .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  /* La primera sección se muestra de forma normal */
+  .section-1 {
+    background-color: #f39c12;
+    /* Al estar en primer lugar, se queda debajo pero se muestra como base */
+  }
+  
+  /* Las siguientes secciones inician fuera de la vista (abajo) */
+  .section-2 {
+    background-color: #27ae60;
+    transform: translateY(100%);
+  }
+  
+  .section-3 {
+    background-color: #2980b9;
+    transform: translateY(100%);
+  }
+  

@@ -2,7 +2,7 @@
     {
         "name": "Jurassic World Experience",
         "banner": "/mainSlider/JurrasicBanner.jpg",
-        "mobileBanner": "",
+        "mobileBanner": "/mainSlider/JurrasicBanner.jpg",
         "artistiImage":"",
         "url": "https://www.eticket.co/home.aspx",
         "descripcion": "Jurassic World Experience es una exposición interactiva que te llevará a un viaje a través de la Isla Nublar, donde podrás ver dinosaurios en tamaño real, escenarios de las películas y mucho más."
@@ -11,7 +11,7 @@
         "name": "Shakira",
         "banner": "/mainSlider/BannerShakira.png",
         "mobileBanner": "/mainSlider/BannerShakiraMobile.png",
-        "artistiImage":"events/miniaturaSH.webp",
+        "artistiImage":"",
         "url": "https://www.eticket.co/eventos.aspx?idartista=793&utm_source=ocesawebpage&utm_medium=referral+",
         "descripcion": "Shakira es una cantante, compositora, productora discográfica, bailarina, modelo, empresaria, actriz, embajadora de buena voluntad de la UNICEF y filántropa colombiana. Ha sido descrita como la artista más exitosa de América Latina y una de las más influyentes en el mundo."
     }, 

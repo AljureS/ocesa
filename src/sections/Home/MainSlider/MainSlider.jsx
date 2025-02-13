@@ -83,7 +83,6 @@ const MainSlider = () => {
           <GrPrevious size={62} />
         </button>
 
-        {/* Imagen saliente (solo aparece si oldIndex !== null) */}
         {oldIndex !== null && (
           <div
             className={`slider-image-container slide-old ${direction}`}
