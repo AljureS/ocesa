@@ -1,14 +1,14 @@
 import React from 'react'
-// import EventsSlider from '../../sections/Home/EventsSlider/EventsSlider';
+import EventsSlider from '../../sections/Home/EventsSlider/EventsSlider';
 import VerticalSlider from '../../sections/Events/VerticalSlider';
 const Eventos = () => {
 
   return (
     <>
       {/* <h1>Cartelera</h1> */}
-      <VerticalSlider></VerticalSlider>
+      <VerticalSlider/>
       
-      {/* <EventsSlider></EventsSlider> */}
+      <EventsSlider></EventsSlider>
     </>
   )
 }

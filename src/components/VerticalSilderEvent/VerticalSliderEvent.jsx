@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./VerticalSliderEvent.css";
+import EventsSlider from "../../sections/Home/EventsSlider/EventsSlider";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -42,16 +43,17 @@ const VerticalSliderEvent = () => {
     }, []);
 
     return (
-        <div ref={containerRef} className="container">
-        <section className="image section-1">
-            <h2>Sección 1</h2>
-        </section>
-        <section className="image section-2">
-            <h2>Sección 2</h2>
-        </section>
-        <section className="image section-3">
-            <h2>Sección 3</h2>
-        </section>
+        <div ref={containerRef} className="container-vertical-slider">
+            <section className="image section-1">
+                <h2>Sección 1</h2>
+            </section>
+            <section className="image section-2">
+                <h2>Sección 2</h2>
+            </section>
+            <section className="image section-3">
+                <h2>Sección 3</h2>
+            </section>
+            {/* <section className="image section-4"><EventsSlider /></section> */}
         </div>
     );
 };

@@ -1,14 +1,16 @@
     /* VerticalSliderEvent.css */
 
     /* El contenedor se posiciona relativo y oculta lo que sobresalga */
-    .container {
+    .container-vertical-slider {
     position: relative;
+    width: 100%;
     height: 100vh;
     overflow: hidden;
+    scroll-behavior: smooth;
     }
 
     /* Todas las secciones se posicionan de manera absoluta para superponerse */
-    .container .image {
+    .container-vertical-slider .image {
     position: absolute;
     top: 0;
     left: 0;
@@ -146,3 +148,11 @@
             #dc8360 100%     /* Rosa dorado del logo 30th */
         );
     }
+
+    .eventos-cartelera{
+        margin-top: 2rem;
+        height: 120dvh;
+        
+    }
+
+    

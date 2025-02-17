@@ -15,7 +15,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/eventos" element={<Eventos />} />
+          <Route path="/cartelera" element={<Eventos />} />
           {/* <Route path="/novedades" element={<News />} /> */}
           {/* <Route path="/galery" element={<Galery />} /> */}
           {/* <Route path="/greenDistrict" element={<GreenDistrict />} /> */}

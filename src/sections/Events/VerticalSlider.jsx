@@ -4,7 +4,7 @@ import VerticalSliderEvent from '../../components/VerticalSilderEvent/VerticalSl
 const VerticalSlider = () => {
     return (
         <>
-            <VerticalSliderEvent></VerticalSliderEvent>
+            <VerticalSliderEvent/>
         </>
     )
 }

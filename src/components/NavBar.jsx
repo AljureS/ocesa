@@ -58,9 +58,8 @@ const NavBar = () => {
 
                     {/* Navigation Menu */}
                     <ul className={`menu ${isOpen ? 'menu-open' : ''}`}>
-                        <li><Link to="/" onClick={() => setIsOpen(false)} className="hover-line">Inicio</Link></li>
-                        {/* <li><Link to="/novedades">Novedades</Link></li> */}
-                        <li><Link to="/eventos"  onClick={() => setIsOpen(false)} className="hover-line">Cartelera</Link></li>
+                        <li><Link to="" onClick={() => setIsOpen(false)} className="hover-line">Inicio</Link></li>
+                        <li><Link to="/cartelera" onClick={() => setIsOpen(false)} className="hover-line">Cartelera</Link></li>
                         {/* <li><Link to="/galery">Galeria</Link></li> */}
                         {/* <li><Link to="/greenDistrict">VERDE</Link></li> */}
                         <li><Link to="/nosotros" onClick={() => setIsOpen(false)} className="hover-line">Nosotros</Link></li>
