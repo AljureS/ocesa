@@ -90,7 +90,7 @@ const MainSlider = () => {
           >
             <img
               src={
-                isMobile
+                isMobile 
                   ? `${events[oldIndex].mobileBanner}`
                   : `${events[oldIndex].banner}`
               }

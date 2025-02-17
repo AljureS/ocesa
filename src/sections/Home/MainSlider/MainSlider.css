@@ -133,15 +133,15 @@
 
 @media screen and (max-width: 768px) {
   .slider-home {
-    width: 102dvw;
-    height: 100dvh; /*Para tablet puedo manejar mas*/
-    padding: 0%;
-    overflow: hidden;
+    width: 100%;
+    height: 86dvh; 
+    margin-left: 0rem;
   }
 
   .slider-image-container img {
-    object-position: center;
-    object-position: top;
+    object-fit: cover;
+    /* object-position: center; */
+    /* object-position: top; */
   }
 
   .slider-btn {
