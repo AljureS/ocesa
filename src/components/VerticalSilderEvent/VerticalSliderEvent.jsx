@@ -1,8 +1,6 @@
-import React, { useRef, useEffect, useLayoutEffect } from "react";
+import React, { useRef, useLayoutEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./VerticalSliderEvent.css";
-import EventsSlider from "../../sections/Home/EventsSlider/EventsSlider";
-
 import gsap from "gsap";
 
 const VerticalSliderEvent = () => {
