@@ -5,7 +5,6 @@ const Eventos = () => {
 
   return (
     <>
-      {/* <h1>Cartelera</h1> */}
       <VerticalSlider/>
       
       <EventsSlider></EventsSlider>

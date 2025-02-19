@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Footer from './components/Footer'
 import NavBar from './components/NavBar' 
@@ -9,26 +9,27 @@ import Eventos from './pages/Eventos/Eventos'
 
 function App() {
   return (
-    <>
-      <NavBar/>
+      <>
+        <NavBar/>
 
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/cartelera" element={<Eventos />} />
-          {/* <Route path="/novedades" element={<News />} /> */}
-          {/* <Route path="/galery" element={<Galery />} /> */}
-          {/* <Route path="/greenDistrict" element={<GreenDistrict />} /> */}
-          <Route path="/nosotros" element={<AboutUs />} />
+        <main>
+          <Routes >
+            <Route path="/" element={<Home />} />
+            <Route path="/cartelera" element={<Eventos />} />
+            {/* <Route path="/novedades" element={<News />} /> */}
+            {/* <Route path="/galery" element={<Galery />} /> */}
+            {/* <Route path="/greenDistrict" element={<GreenDistrict />} /> */}
+            <Route path="/nosotros" element={<AboutUs />} />
 
-          <Route path='/terminos-y-condiciones' element={<TerminosCondiciones/>}/>
-          <Route path='/politica-de-privacidad' element={<TerminosCondiciones/>}/>
-          
-        </Routes> 
-      </main>
-      
-      <Footer/>
-    </>
+            <Route path='/terminos-y-condiciones' element={<TerminosCondiciones/>}/>
+            <Route path='/politica-de-privacidad' element={<TerminosCondiciones/>}/>
+            
+          </Routes> 
+        </main>
+        
+        <Footer/>
+      </>
+    
   )
 }
 
