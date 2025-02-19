@@ -45,62 +45,57 @@
         /* Al estar en primer lugar, se queda debajo pero se muestra como base */
         }
     
-        /* Las siguientes secciones inician fuera de la vista (abajo) */
-        /* .section-2 {
-        background-color: #27ae60;
-        transform: translateY(100%);
-        } */
-    
-        .section-2 {
-        width: 100%;
-        height: 100%;
-        background-color: #1e293b;
-        background-image: linear-gradient(
-            30deg,
-            #0f172a 12%,
-            transparent 12.5%,
-            transparent 87.5%,
-            #0f172a 87.5%,
-            #0f172a
-            ),
-            linear-gradient(
-            150deg,
-            #0f172a 12%,
-            transparent 12.5%,
-            transparent 87.5%,
-            #0f172a 87.5%,
-            #0f172a
-            ),
-            linear-gradient(
-            30deg,
-            #0f172a 12%,
-            transparent 12.5%,
-            transparent 87.5%,
-            #0f172a 87.5%,
-            #0f172a
-            ),
-            linear-gradient(
-            150deg,
-            #0f172a 12%,
-            transparent 12.5%,
-            transparent 87.5%,
-            #0f172a 87.5%,
-            #0f172a
-            ),
-            linear-gradient(
-            60deg,
-            rgba(59, 130, 246, 0.2) 25%,
-            transparent 25.5%,
-            transparent 75%,
-            rgba(59, 130, 246, 0.2) 75%,
-            rgba(59, 130, 246, 0.2)
-            );
-        background-size: 80px 140px;
-        background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0;
-        position: relative;
-        }
+    .section-2 {
+            width: 100%;
+            height: 100%;
+            background-color: #1e293b;
+            background-image: linear-gradient(
+                30deg,
+                #0f172a 12%,
+                transparent 12.5%,
+                transparent 87.5%,
+                #0f172a 87.5%,
+                #0f172a
+                ),
+                linear-gradient(
+                150deg,
+                #0f172a 12%,
+                transparent 12.5%,
+                transparent 87.5%,
+                #0f172a 87.5%,
+                #0f172a
+                ),
+                linear-gradient(
+                30deg,
+                #0f172a 12%,
+                transparent 12.5%,
+                transparent 87.5%,
+                #0f172a 87.5%,
+                #0f172a
+                ),
+                linear-gradient(
+                150deg,
+                #0f172a 12%,
+                transparent 12.5%,
+                transparent 87.5%,
+                #0f172a 87.5%,
+                #0f172a
+                ),
+                linear-gradient(
+                60deg,
+                rgba(59, 130, 246, 0.2) 25%,
+                transparent 25.5%,
+                transparent 75%,
+                rgba(59, 130, 246, 0.2) 75%,
+                rgba(59, 130, 246, 0.2)
+                );
+            background-size: 80px 140px;
+            background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0;
+            position: relative;
+    }
     
         .section-2::after {
+        z-index: -1;
         content: "";
         position: absolute;
         inset: 0;

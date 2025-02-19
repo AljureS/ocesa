@@ -36,7 +36,7 @@ const EventsSlider = () => {
                                     <img src={`${event.artistiImage}`} alt={event.name} loading='lazy'/>
                                     <div className="overlay-content">
                                         <p className='event-name'>{event.name}</p>
-                                        <ButtonSpecial url={event.url}/>
+                                        <ButtonSpecial url={event.url}/> 
                                     </div>
                                 </div>
                             ))

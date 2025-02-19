@@ -12,6 +12,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Lemon Milk Light';
+  src: url('/fonts/LEMONMILK-Light.otf') format('opentype');
+  font-weight: light;
+  font-style: light;
+}
+
 :root{
   font-family: 'Lemon Milk', sans-serif;
   font-synthesis: none;

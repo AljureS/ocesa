@@ -1,0 +1,77 @@
+.cardCatalogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobileTitle{
+    display: none;
+    visibility: hidden;
+}
+
+.cardImage{
+    height: 100dvh;
+    z-index: 10000;
+}
+.cardInfo{
+    display: flex;
+    flex-direction: column;
+    width: 56vw;
+    font-family: 'Lemon Milk Regular';
+    font-size: 2rem;
+    margin-left: 2rem;
+    padding: 3rem;
+
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+h2{
+    font-family: 'Lemon Milk Regular';
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.cardDescription{
+    text-align: justify;
+    font-size: 1rem;
+    font-family: 'Lemon Milk Light';
+    font-weight: light;
+    font-style: light;
+    margin-top: 2.5rem
+}
+.cardContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .cardCatalogo{
+        flex-direction: column;
+    }
+    .cardImage{
+        height: 50dvh;
+    }
+    .cardContent > .cardInfo{
+        visibility: hidden;
+        display: none;
+    }
+
+    .mobileTitle{
+        visibility: visible;
+        text-align: center;
+        display: block;
+        font-size: 2.2rem;
+        font-family: 'Lemon Milk';
+    }
+    .cardButton{
+        
+        width: 80vw;
+        align-items: center;
+    }
+    
+}

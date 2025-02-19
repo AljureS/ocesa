@@ -5,6 +5,7 @@ import gsap from "gsap";
 
 // import events from "../../data/dataEvents.json";
 import events from "../../data/dataHidden.json";
+import CardEvent from "../../components/CardEvent/CardEvent";
 
 const VerticalSlider = () => {
     const containerRef = useRef(null);
@@ -48,13 +49,14 @@ const VerticalSlider = () => {
     return (
         <div ref={containerRef} className="container-vertical-slider">
             <section className="image section-1">
-                <h2>Sección 1</h2>
+                <CardEvent evento = {events[0]}></CardEvent>
             </section>
             <section className="image section-2">
-                <h2>Sección 2</h2>
+                
+                <CardEvent evento = {events[1]}></CardEvent>
             </section>
             <section className="image section-3">
-                <h2>Sección 3</h2>
+                <CardEvent evento = {events[2]}></CardEvent>
             </section>
             {/* <section className="image section-4"><EventsSlider /></section> */}
         </div>
