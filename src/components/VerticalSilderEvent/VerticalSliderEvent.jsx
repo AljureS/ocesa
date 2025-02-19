@@ -3,8 +3,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./VerticalSliderEvent.css";
 import gsap from "gsap";
 
+// import events from "../../data/dataEvents.json";
+import events from "../../data/dataHidden.json";
+
 const VerticalSliderEvent = () => {
     const containerRef = useRef(null);
+    console.log(events);
 
     useLayoutEffect(() => {
         const sections = gsap.utils.toArray(".image");
@@ -38,6 +42,8 @@ const VerticalSliderEvent = () => {
             ScrollTrigger.getAll().forEach(trigger => trigger.kill());
         };
     }, []);
+
+    
 
     return (
         <div ref={containerRef} className="container-vertical-slider">
