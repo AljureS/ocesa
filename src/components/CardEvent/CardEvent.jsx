@@ -15,8 +15,9 @@ const CardEvent = ({evento}) => {
 
     return (
         <div className={styles.cardCatalogo}>
-            <h2 className={styles.mobileTitle}>{name}</h2>
             
+            <h2  className={styles.mobileTitle}>{name}</h2>
+        
             <div>
                 <img src={artistiImage} alt={name + " image"} className={styles.cardImage} />
             </div>
