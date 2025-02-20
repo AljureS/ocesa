@@ -54,9 +54,9 @@
         "available": false
     },
     {
-        "name": "Cold Play",
+        "name": "Coldplay",
         "artistiImage":"events/minniaturaColdPlay.jpg",
-        "url": "https://www.eticket.co/?utm_source=ocesa&utm_medium=banner+&utm_campaign=ocesa_events+",
-        "available": false
+        "url": "https://www.eticket.co/",
+        "available": true
     }
 ]

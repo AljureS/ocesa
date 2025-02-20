@@ -14,7 +14,7 @@ const SocialMedia = () => {
     });
 
     return (
-        <section className="social-media">
+        <section className="social-media"> 
             <ScrollAnimation  animateIn="animate__fadeInRightBig"  delay={0} animateOnce={true}>
                 <div className='social-media-title'>
                     <h3>Redes Sociales</h3>

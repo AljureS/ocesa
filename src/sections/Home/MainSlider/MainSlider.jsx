@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./MainSlider.css";
 import events from "../../../data/dataEvents.json";
+// import events from "../../../data/dataHidden.json";
 import { GrNext, GrPrevious } from "react-icons/gr";
 import { useSwipeable } from "react-swipeable";
 
@@ -82,7 +83,6 @@ const MainSlider = () => {
           <GrPrevious size={62} />
         </button>
 
-        {/* Imagen saliente (solo aparece si oldIndex !== null) */}
         {oldIndex !== null && (
           <div
             className={`slider-image-container slide-old ${direction}`}
@@ -90,7 +90,7 @@ const MainSlider = () => {
           >
             <img
               src={
-                isMobile
+                isMobile 
                   ? `${events[oldIndex].mobileBanner}`
                   : `${events[oldIndex].banner}`
               }

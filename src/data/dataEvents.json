@@ -4,13 +4,16 @@
         "banner": "/mainSlider/BannerShakira.png",
         "mobileBanner": "/mainSlider/BannerShakiraMobile.png",
         "artistiImage":"events/miniaturaSH.webp",
-        "url": "https://www.eticket.co/eventos.aspx?idartista=793&utm_source=ocesawebpage&utm_medium=referral+"
-    },
+        "url": "https://www.eticket.co/eventos.aspx?idartista=793&utm_source=ocesawebpage&utm_medium=referral+",
+        "descripcion": "Shakira es una cantante, compositora, productora discográfica, bailarina, modelo, empresaria, actriz, embajadora de buena voluntad de la UNICEF y filántropa colombiana. Ha sido descrita como la artista más exitosa de América Latina y una de las más influyentes en el mundo."
+    }, 
     {
         "name": "Andrea Bocelli",
         "banner": "/mainSlider/AndreaBanner.png",
         "mobileBanner": "/mainSlider/AndreaBannerMobile.png",
         "artistiImage":"",
-        "url": "https://www.eticket.co/eventos.aspx?idartista=804&utm_source=ocesawebpage&utm_medium=referral+"
+        "url": "https://www.eticket.co/eventos.aspx?idartista=804&utm_source=ocesawebpage&utm_medium=referral+",
+        "descripcion": "Andrea Bocelli es un cantante, músico, escritor y productor musical italiano. Es considerado uno de los mejores tenores de la historia de la música. Ha vendido más de 90 millones de discos en todo el mundo."
+
     }
 ]

@@ -7,8 +7,6 @@
   align-items: center;
   padding: 0;
   overflow: hidden;
-  /* margin-left: -17px;
-  margin-right: -16px; */
 }
 
 .slider-main {
@@ -59,7 +57,8 @@
 .slider-image-container {
   position: absolute;
   /* object-fit: top; */
-  top: 0;
+  top: 1%;
+  /* top: 4%;  Cambiar a este cuando despues de Jurrasic*/
   left: 0;
   width: 100%;
   height: 100%;
@@ -68,7 +67,6 @@
 .slider-image-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   object-position: top, center;
 }
 
@@ -135,17 +133,15 @@
 
 @media screen and (max-width: 768px) {
   .slider-home {
-    width: 102dvw;
-    height: 100dvh; /*Para tablet puedo manejar mas*/
-    padding: 0%;
-    overflow: hidden;
+    width: 100%;
+    height: 86dvh; 
+    margin-left: 0rem;
   }
 
   .slider-image-container img {
-    
-    /* object-fit: cover; */
-    object-position: center;
-    object-position: top;
+    object-fit: cover;
+    /* object-position: center; */
+    /* object-position: top; */
   }
 
   .slider-btn {

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const ButtonSpecial = ({url}) => {
-    return (
+    return ( 
         <StyledWrapper> 
             <div className="voltage-button">
                 <button onClick={()=>{window.location.href = url}}>Ver más</button>
