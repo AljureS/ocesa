@@ -18,7 +18,7 @@
     align-items: space-between;
     padding-right: 0rem;
     overflow-x: auto; /* Add this line */
-    scroll-snap-type: x mandatory; /* Add this line */
+    scroll-snap-type: x mandatory; 
 }
 
 .social-container::-webkit-scrollbar {

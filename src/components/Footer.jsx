@@ -17,7 +17,7 @@ const Footer = () => {
                     alt="Ocesa Logo" 
                     className="logoFooter" 
                     onClick={redirectToHome} 
-                    style={{ cursor: 'pointer' }}
+                    style={{ cursor: 'url(/mouse/microphone-color-1.svg), auto' }}
                 />
 
                 <div className='footer-text'>
