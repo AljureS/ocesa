@@ -6,6 +6,10 @@
     /* position: relative; */
 }
 
+/* header{
+    
+} */
+
 .logo{
     width: 90px;
     /* height: 100px; */
@@ -66,7 +70,7 @@
     background: none;
     border: none;
     color: white;
-    cursor: url('/mouse/microphone-color-1.svg'), auto;
+    cursor: pointer;
     display: none; /* Oculto en pantallas grandes */
     transition: transform 0.5s ease; /* Transición suave */
 }
@@ -74,7 +78,6 @@
 
 .menu-toggle:hover {
     transform: scale(1.1); /* Color destacado al pasar el mouse */
-    cursor: url('/mouse/microphone-color-2.svg'), auto;
 }
 
 /* Menú de navegación */
@@ -152,14 +155,15 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        display: flex;
+        display: flex;  /*Oculto por defecto */
         gap: 2rem;
         transform: translateX(100%);
         transition: transform 0.5s ease-out;
     }
 
     .menu.menu-open {
-
+        /* display: flex; Mostrar el menú cuando esté activo */
+        /* color: antiquewhite; */
         transform: translateX(0);
     }
 
