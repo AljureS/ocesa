@@ -55,7 +55,7 @@ const StyledWrapper = styled.div`
 }
 
 .voltage-button button:hover {
-    cursor: pointer;
+    cursor: url('/public/mouse/microphone-color-2.svg'), auto;
     background:rgba(155, 24, 79, 0.43);
 }
 

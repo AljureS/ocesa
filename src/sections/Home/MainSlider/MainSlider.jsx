@@ -3,14 +3,14 @@ import "./MainSlider.css";
 import events from "../../../data/dataEvents.json";
 // import events from "../../../data/dataHidden.json";
 import { GrNext, GrPrevious } from "react-icons/gr";
-import { useSwipeable } from "react-swipeable";
+import { useSwipeable } from "react-swipeable"; 
 
 const MainSlider = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [oldIndex, setOldIndex] = useState(null); // indice de l img que se va
   const [direction, setDirection] = useState(null); // dureccion de la animacion prev o next
-  const [transitioning, setTransitioning] = useState(false); // si hay o no una transicion
+  const [transitioning, setTransitioning] = useState(false); 
 
   const checkMobile = () => {
     return window.innerWidth <= 768;

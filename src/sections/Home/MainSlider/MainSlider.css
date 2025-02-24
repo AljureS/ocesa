@@ -28,7 +28,7 @@
   background-color: rgba(32, 27, 27, 0);
   border-radius: 50%;
   border: none;
-  cursor: pointer;
+  cursor: url('/public/mouse/microphone-color-2.svg'), auto;
   padding: 1rem;
 }
 .prev {
