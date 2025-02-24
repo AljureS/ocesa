@@ -49,7 +49,7 @@ const NavBar = () => {
                         alt="Ocesa Logo"
                         className="logo"
                         onClick={redirectToHome}
-                        style={{ cursor: "pointer" }}
+                        style={{ cursor: "url('/public/mouse/microphone-color-2.svg'), auto" }}
                     />
 
                     {/* Botón para toggle del menú */}
