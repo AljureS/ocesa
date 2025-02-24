@@ -52,7 +52,7 @@ const VerticalSlider = () => {
                 <CardEvent evento = {events[0]}></CardEvent>
             </section> */}
             <section className="image section-2">
-                
+
                 <CardEvent evento = {events[1]}></CardEvent>
             </section>
             <section className="image section-3">
