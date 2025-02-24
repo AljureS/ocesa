@@ -66,7 +66,7 @@
     background: none;
     border: none;
     color: white;
-    /* cursor: url('/public/mouse/microphone-color-2.svg'), auto; */
+    cursor: url('/public/mouse/microphone-color-2.svg'), auto;
     display: none; /* Oculto en pantallas grandes */
     transition: transform 0.5s ease; /* Transición suave */
 }
@@ -74,7 +74,7 @@
 
 .menu-toggle:hover {
     transform: scale(1.1); /* Color destacado al pasar el mouse */
-    cursor: url('/mouse/microphone-color-2.svg'), auto;
+    cursor: url('/public/mouse/microphone-color-2.svg'), auto;
 }
 
 /* Menú de navegación */
