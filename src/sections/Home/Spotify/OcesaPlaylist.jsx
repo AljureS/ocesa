@@ -15,7 +15,7 @@ const OcesaPlaylist = () => {
                 </ScrollAnimation>   
 
                     <div className='ocesa-playlist-container'>
-                        <ScrollAnimation animateIn="animate__fadeInUp" animateOut='animate__zoomOut'  animateOnce={false}>
+                        <ScrollAnimation animateIn="animate__fadeInUp" animateOut='animate__zoomOut' animateOnce={false}>
                             <div className='spotify-container'>
                                 <iframe 
                                     className='ocesa-playlist'
