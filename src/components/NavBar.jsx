@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { NavLink, useNavigate, useLocation, Link } from "react-router-dom";
+import { useNavigate, useLocation, Link } from "react-router-dom";
 import "./NavBar.css";
 import { GrClose } from "react-icons/gr";
 import { RiMenuUnfold4Fill } from "react-icons/ri";

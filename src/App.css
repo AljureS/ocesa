@@ -1,9 +1,7 @@
 html, body {
     overflow-x: hidden;
     cursor: url('/mouse/microphone-color-1.svg'), auto;
-    rotate: 90deg;
-    transform: rotate(90deg);
-    transform-origin: 0 0;
+    
 }
 body {
   margin: 0;
