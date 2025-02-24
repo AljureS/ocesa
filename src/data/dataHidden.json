@@ -28,7 +28,7 @@
         "url": "https://www.eticket.co/eventos.aspx?idartista=804&utm_source=ocesawebpage&utm_medium=referral+",
         "descripcion": "Andrea Bocelli, el tenor italiano más aclamado, respetado y galardonado de la historia anunció su regreso a la capital colombiana. Celebrará tres décadas de un extraordinario legado musical con el concierto más grande que ha dado en nuestro país el próximo viernes 21 de febrero de 2025 desde el estadio El Campín de Bogotá.",
         "btnText": "Comprar",
-        "availability": true
+        "availability": false
 
     }
 ]
