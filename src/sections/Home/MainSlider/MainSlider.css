@@ -1,6 +1,15 @@
+/* Variables para facilitar el mantenimiento */
+:root {
+  --accent-color: #ff4081;
+  --transition-time: 0.75s;
+  --btn-hover-time: 0.7s;
+  --shadow-blur: 100px;
+  --shadow-offset: 30px;
+}
+
 .slider-home {
-  margin: -6px;
-  height: 100dvh;
+  margin: 0;
+  height: 110dvh;
   width: 100dvw;
   display: flex;
   justify-content: center;
@@ -19,113 +28,127 @@
 .slider-btn {
   position: absolute;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   color: white;
-  top: 50%;
+  top: 45%;
   transform: translateY(-50%);
   z-index: 10;
-  background-color: rgba(32, 27, 27, 0);
+  background-color: transparent;
   border-radius: 50%;
   border: none;
   cursor: url('/mouse/microphone-color-2.svg'), auto;
   padding: 1rem;
+  transition: all var(--btn-hover-time) ease;
 }
+
 .prev {
-  left: 1rem; /* Para ubicar el botón a la izquierda */
-}
-.prev:hover {
-  left: -0.1rem; /* Para ubicar el botón a la izquierda */
-  transition: 0.7s;
-  color: #ff4081;
-  filter: drop-shadow(0 0 100px #ff4081) /* Más desenfoque */
-        drop-shadow(30px 0 10px #ff4081);
+  left: 1rem;
 }
 
 .next {
-  right: 1rem; /* Botón a la derecha */
+  right: 1rem;
 }
-.next:hover{
+
+.prev:hover,
+.next:hover {
+  color: var(--accent-color);
+}
+
+.prev:hover {
+  left: -0.1rem;
+  filter: drop-shadow(0 0 var(--shadow-blur) var(--accent-color))
+          drop-shadow(var(--shadow-offset) 0 10px var(--accent-color));
+}
+
+.next:hover {
   right: 0.1rem;
-  transition: 0.7s;
-  color: #ff4081;
-  filter:drop-shadow(0 0 100px #ff4081) /* Más desenfoque */
-        drop-shadow(-30px 0 10px #ff4081);
+  filter: drop-shadow(0 0 var(--shadow-blur) var(--accent-color))
+          drop-shadow(calc(-1 * var(--shadow-offset)) 0 10px var(--accent-color));
 }
 
 /* Capas de imagen */
 .slider-image-container {
   position: absolute;
-  /* object-fit: top; */
-  top: 1%;
-  /* top: 4%;  Cambiar a este cuando despues de Jurrasic*/
-  left: 0;
+  top: -1%;
+  left: -1%;
   width: 100%;
-  height: 100%;
+  height: 101%;
 }
 
 .slider-image-container img {
   width: 100%;
   height: 100%;
-  object-position: top, center;
+  object-position: top center;
+}
+
+/* Animaciones unificadas */
+.slide-old.next,
+.slide-old.prev,
+.slide-current.next,
+.slide-current.prev {
+  animation-duration: var(--transition-time);
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 /* SALIENTE - "old" */
 .slide-old.next {
-  animation: slideOutLeft 0.75s ease-in-out;
+  animation-name: slideOutLeft;
 }
+
 .slide-old.prev {
-  animation: slideOutRight 0.75s ease-in-out ;
+  animation-name: slideOutRight;
 }
 
 /* ACTUAL - "current" */
 .slide-current.next {
-  animation: slideInRight 0.75s forwards;
-}
-.slide-current.prev {
-  animation: slideInLeft 0.75s forwards;
+  animation-name: slideInRight;
 }
 
-/* Keyframes */
+.slide-current.prev {
+  animation-name: slideInLeft;
+}
+
+/* Keyframes optimizados con transform para mejor rendimiento */
 @keyframes slideOutLeft {
-  0% {
+  from {
     transform: translateX(0);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(-100%);
     opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
   }
 }
 
 @keyframes slideInRight {
-  0% {
+  from {
     transform: translateX(100%);
-    opacity: 1;
+    opacity: 0;
   }
-  100% {
+  to {
     transform: translateX(0);
     opacity: 1;
   }
 }
 
 @keyframes slideOutRight {
-  0% {
+  from {
     transform: translateX(0);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(100%);
     opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
   }
 }
 
 @keyframes slideInLeft {
-  0% {
+  from {
     transform: translateX(-100%);
-    opacity: 1;
+    opacity: 0;
   }
-  100% {
+  to {
     transform: translateX(0);
     opacity: 1;
   }
@@ -134,38 +157,37 @@
 @media screen and (max-width: 768px) {
   .slider-home {
     width: 100%;
-    height: 86dvh; 
-    margin-left: 0rem;
+    height: 87dvh;
+    margin-left: 0;
+  }
+
+  .slider-image-container{
+    left: -0.1%;
   }
 
   .slider-image-container img {
     object-fit: cover;
-    /* object-position: center; */
-    /* object-position: top; */
   }
 
   .slider-btn {
-    position: absolute;
-    color: white;
     top: 72%;
-    transform: translateY(-50%);
-    z-index: 10;
-    background-color: none;
-    border-radius: 50%;
-    border: none;
-    
+    background-color: transparent;
   }
 
   .prev {
-    left: 0.5rem; 
+    left: 0.5rem;
   }
   
   .next {
-    right: 0.5rem; 
+    right: 0.5rem;
   }
 
   .slider-btn:hover {
-    color: #ffffffd5;
+    color: rgba(255, 255, 255, 0.84);
+  }
   
+  /* Resetear los efectos hover complejos en móvil para mejor rendimiento */
+  .prev:hover, .next:hover {
+    filter: none;
   }
 }

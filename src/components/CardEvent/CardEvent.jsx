@@ -29,7 +29,6 @@ const CardEvent = ({evento}) => {
                 </div>
                 <div>
                     <Button2 className={styles.cardButton} botonInfo={botonInfo}></Button2>
-
                 </div>
             </div>
         </div>
