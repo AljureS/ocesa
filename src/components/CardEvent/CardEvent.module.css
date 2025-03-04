@@ -52,6 +52,7 @@ h2{
 
 @media screen and (max-width: 768px) {
     .cardCatalogo{
+        margin-bottom: 2rem;
         flex-direction: column;
     }
     .cardImage{
@@ -68,6 +69,7 @@ h2{
         display: block;
         font-size: 2.2rem;
         font-family: 'Lemon Milk';
+        /* margin-bottom: rem; */
     }
     .cardButton{
         

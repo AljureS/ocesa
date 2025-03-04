@@ -1,5 +1,11 @@
 [
     {
+        "name": "Jurrasic World",
+        "artistiImage":"events/miniaturaJurrasicWorld.jpg",
+        "url": "https://www.eticket.co/masinformacion.aspx?idevento=25683",
+        "available": true
+    },
+    {
         "name": "Shakira",
         "artistiImage":"events/miniaturaShakira.jpg",
         "url": "https://www.eticket.co/eventos.aspx?idartista=793&utm_source=ocesawebpage&utm_medium=referral+",
@@ -52,11 +58,6 @@
         "artistiImage":"events/miniatuiraAlicicaKeys.jpg",
         "url": "https://www.eticket.co/?utm_source=ocesa&utm_medium=banner+&utm_campaign=ocesa_events+",
         "available": false
-    },
-    {
-        "name": "Coldplay",
-        "artistiImage":"events/minniaturaColdPlay.jpg",
-        "url": "https://www.eticket.co/",
-        "available": true
     }
+    
 ]

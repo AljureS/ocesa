@@ -66,6 +66,7 @@ const NavBar = () => {
                     <ul className={`menu ${isOpen ? "menu-open" : ""}`}>
                         <li><Link to="/" className="hover-line">Inicio</Link></li>
                         <li> <Link to="/cartelera" className="hover-line">Cartelera </Link> </li>
+                        {/* <li> <Link to="/galeria" className="hover-line">Galeria </Link> </li> */}
                         <li> <Link to="/nosotros" className="hover-line">Nosotros </Link> </li>
                     </ul>
                 </div>

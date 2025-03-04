@@ -23,27 +23,16 @@
         }
     
         /* La primera sección se muestra de forma normal */
-        .section-1 {
-        width: 100%;
+    .section-1 {
         height: 100dvh;
-        background: radial-gradient(
-                circle at 0% 50%,
-                rgba(96, 16, 48, 0) 19px,
-                rgba(215, 128, 22, 0.386) 20px,
-                rgba(96, 16, 48, 0) 11px
-            )
-            0px 10px,
-            radial-gradient(
-            at 100% 100%,
-            rgba(96, 16, 48, 0) 19px,
-            rgba(215, 128, 22, 0.703) 15px,
-            rgba(96, 16, 48, 0) 11px
-            ),
-            rgb(0, 0, 0);
-        background-size: 30px 20px;
-        scroll-behavior: smooth;
-        /* Al estar en primer lugar, se queda debajo pero se muestra como base */
-        }
+
+        background: linear-gradient(
+            145deg,
+            #2E4D7A 0%,   /* Tonalidad azulada oscura */
+            #12172B 50%,  /* Azul muy oscuro (casi negro) */
+            #216380 100%  /* Azul verdoso más claro */ /* verde más claro al final */
+            );
+    }
     
     .section-2 {
             width: 100%;

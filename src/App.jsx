@@ -6,6 +6,7 @@ import TerminosCondiciones from './pages/FooterContent/TerminosCondiciones'
 import Home from './pages/Home/Home'
 import AboutUs from './pages/AboutUs/AboutUs'
 import Eventos from './pages/Eventos/Eventos'
+// import Galeria from './pages/Galeria/Galeria'
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/cartelera" element={<Eventos />} />
             {/* <Route path="/novedades" element={<News />} /> */}
-            {/* <Route path="/galery" element={<Galery />} /> */}
+            {/* <Route path="/galeria" element={<Galeria />} /> */}
             {/* <Route path="/greenDistrict" element={<GreenDistrict />} /> */}
             <Route path="/nosotros" element={<AboutUs />} />
 
