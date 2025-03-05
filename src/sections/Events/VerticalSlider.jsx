@@ -9,8 +9,9 @@ import CardEvent from "../../components/CardEvent/CardEvent";
 
 const VerticalSlider = () => {
     const containerRef = useRef(null);
-    
+
     useLayoutEffect(() => {
+        // * todos los elementos con la clase "image" se mueven a un array 
         const sections = gsap.utils.toArray(".image");
         const tl = gsap.timeline({
             scrollTrigger: {
@@ -23,7 +24,7 @@ const VerticalSlider = () => {
                 // Puedes activar los markers para depuración:
                 // markers: true,
             },
-            });
+        });
         
         sections.slice(1).forEach((section) => {
             tl.fromTo(
@@ -42,8 +43,6 @@ const VerticalSlider = () => {
             ScrollTrigger.getAll().forEach(trigger => trigger.kill());
         };
     }, []);
-
-    
 
     return (
         <div ref={containerRef} className="container-vertical-slider">
