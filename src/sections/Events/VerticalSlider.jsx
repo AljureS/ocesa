@@ -9,8 +9,7 @@ import CardEvent from "../../components/CardEvent/CardEvent";
 
 const VerticalSlider = () => {
     const containerRef = useRef(null);
-    console.log(events);
-
+    
     useLayoutEffect(() => {
         const sections = gsap.utils.toArray(".image");
         const tl = gsap.timeline({
