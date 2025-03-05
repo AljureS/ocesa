@@ -11,7 +11,7 @@ const CardEvent = ({evento}) => {
         url: url,
         btnText: btnText,
         availability: availability
-    }
+    } 
 
     return (
         <div className={styles.cardCatalogo}>
