@@ -23,7 +23,7 @@ const EventsSlider = () => {
                                     <div>
                                         <ButtonSpecial url={event.url} />
 
-                                    </div>
+                                    </div> 
                                 </div>
                             </div>
                         ))
