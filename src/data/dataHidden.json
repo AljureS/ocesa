@@ -6,7 +6,7 @@
         "artistiImage":"/catalogo/dino.png", 
         "url": "https://www.eticket.co/eventos.aspx?idartista=840",
         "descripcion": "Al cruzar las emblemáticas puertas de Jurassic World, los visitantes podrán explorar entornos tematizados y encontrarse cara a cara con un Braquiosaurio de tamaño real, Velociraptors como Blue, y el dinosaurio más temible de todos, el poderoso Tyrannosaurus rex. Además, los visitantes tendrán la oportunidad única de interactuar con dinosaurios bebés, incluyendo a “Bumpy” de la exitosa serie animada Jurassic World: Campamento Cretácico, y descubrir Jurassic World: Teoría del Dinocaos.",
-        "btnText": "Ver más",
+        "btnText": "Comprar",
         "availability": true
     },
     {
@@ -17,7 +17,7 @@
         "url": "https://www.eticket.co/eventos.aspx?idartista=793&utm_source=ocesawebpage&utm_medium=referral+",
         "descripcion": "Shakira es una cantante, compositora, productora discográfica, bailarina, modelo, empresaria, actriz, embajadora de buena voluntad de la UNICEF y filántropa colombiana. Ha sido descrita como la artista más exitosa de América Latina y una de las más influyentes en el mundo.",
         "btnText": "Comprar",
-        "availability": false
+        "availability": true
 
     }, 
     {
