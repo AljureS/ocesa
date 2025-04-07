@@ -28,7 +28,7 @@ const Footer = () => {
                         <> / </>
                         <a href="mailto:notificaciones-col@ocesa.co">PRENSA</a>
                     </p>
-                    <p>© 2023 OCESA COLOMBIA. TODOS LOS DERECHOS RESERVADOS. DESARROLLADO POR OCESA COLOMBIA</p>
+                    <p>© 2025 OCESA COLOMBIA. TODOS LOS DERECHOS RESERVADOS. DESARROLLADO POR OCESA COLOMBIA</p>
                 </div>
 
                 <div className="footer-right">
