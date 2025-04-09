@@ -5,7 +5,9 @@ import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import gsap from "gsap";
 import { ScrollTrigger } from 'gsap/all'
+import { inject } from '@vercel/analytics';
 
+inject();
 
 gsap.registerPlugin(ScrollTrigger);
 
