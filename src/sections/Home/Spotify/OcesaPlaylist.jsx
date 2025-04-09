@@ -6,7 +6,7 @@ import './OcesaPlaylist.css'
 const OcesaPlaylist = () => {
     
     return (
-        <>
+        
             <section className='ocesa-playlist-section'>
                 <ScrollAnimation  animateIn="animate__fadeInLeftBig"  delay={0} animateOnce={true}>
                     <div className='ocesa-playlist-title'>
@@ -37,7 +37,7 @@ const OcesaPlaylist = () => {
 
 
             </section>
-        </>
+        
     )
 }
 

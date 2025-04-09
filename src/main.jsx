@@ -3,18 +3,31 @@ import './index.css'
 import App from './App.jsx'
 import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
-import gsap from "gsap";
+import gsap from "gsap"
 import { ScrollTrigger } from 'gsap/all'
-import { inject } from '@vercel/analytics';
+import { inject } from '@vercel/analytics'
 
-inject();
+inject()
+gsap.registerPlugin(ScrollTrigger)
 
-gsap.registerPlugin(ScrollTrigger);
+// Referencias al DOM
+const loader = document.getElementById('loader')
+const rootElement = document.getElementById('root')
 
-createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>,
-)
+// Ocultar loader y mostrar app
+function startApp() {
+  if (loader) loader.style.display = 'none'
+  if (rootElement) rootElement.style.display = 'block'
+
+  createRoot(rootElement).render(
+    <React.StrictMode>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </React.StrictMode>
+  )
+}
+
+// Simula una carga (puedes quitar el setTimeout y llamar `startApp()` directamente si no necesitas esperar)
+setTimeout(startApp, 2000)
+// startApp() // Descomentar si no necesitas el loader

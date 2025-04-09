@@ -1,6 +1,7 @@
 .ocesa-playlist-section{
-    height: 80vh;
-    margin-bottom: 2rem;
+    background-color: white;
+    height: 90vh;
+    /* margin-bottom: 2rem; */
     width: 100dvw;
     cursor: url('/mouse/microphone-color-1.svg'), auto;
 }
@@ -23,7 +24,7 @@ h3{
 } 
 
 .ocesa-playlist-title{
-    margin-top: 3rem;
+    padding-top: 3rem;
 }
 
 .ocesa-playlist{
