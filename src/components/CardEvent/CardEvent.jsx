@@ -35,7 +35,7 @@ const CardEvent = ({evento}) => {
     )
 }
 CardEvent.propTypes = {
-    evento: PropTypes.shape({
+    evento: PropTypes.shape({ 
         name: PropTypes.string.isRequired,
         artistiImage: PropTypes.string.isRequired,
         url: PropTypes.string.isRequired,

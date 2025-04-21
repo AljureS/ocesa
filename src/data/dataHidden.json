@@ -1,4 +1,26 @@
-[
+[ 
+    {
+        "name": "Dua Lipa",
+        "banner": "/mainSlider/DuaLipaBanner.png",
+        "mobileBanner": "/mainSlider/DuaLipaBannerMobile.png",
+        "artistiImage":"/catalogo/DL.png",
+        "url": "https://www.ticketmaster.co/event/dua-lipa",
+        "descripcion": "Dua Lipa, la gran popstar de esta generación, tendrá su regreso triunfal a Bogotá presentando el 'Radical Optimism Tour'. El Estadio El Campín será su gran escenario lleno éxitos absolutos, luces incesantes y cambios de vestuarios sorprendentes el próximo 28 de noviembre.",
+        "btnText": "Comprar",
+        "availability": true
+
+    }, 
+    {
+        "name": "Linkin Park",
+        "banner": "/mainSlider/LinkinParkBanner.png",
+        "mobileBanner": "/mainSlider/LinkinParkBannerMobile.png",
+        "artistiImage":"/catalogo/LP.png",
+        "url": "https://www.ticketmaster.co/event/linkin-park",
+        "descripcion": "Bogotá ya sabe lo que es un show de Linkin Park. Como lo prometieron, la banda liderada por Mike Shinoda y Emily Armstrong regresa y lo hará en un marco todavía más grande para una presentación que terminará de sellar el vínculo entre LP y Colombia. Todos los clásicos que han marcado generaciones y la presentación definitiva de 'From Zero', su celebrado nuevo álbum de estudio.",
+        "btnText": "Comprar",
+        "availability": true
+
+    },
     {
         "name": "Jurassic World: The Experience",
         "banner": "/mainSlider/JurrasicBanner.jpg",
@@ -8,27 +30,6 @@
         "descripcion": "Al cruzar las emblemáticas puertas de Jurassic World, los visitantes podrán explorar entornos tematizados y encontrarse cara a cara con un Braquiosaurio de tamaño real, Velociraptors como Blue, y el dinosaurio más temible de todos, el poderoso Tyrannosaurus rex. Además, los visitantes tendrán la oportunidad única de interactuar con dinosaurios bebés, incluyendo a “Bumpy” de la exitosa serie animada Jurassic World: Campamento Cretácico, y descubrir Jurassic World: Teoría del Dinocaos.",
         "btnText": "Comprar",
         "availability": true
-    },
-    {
-        "name": "Shakira",
-        "banner": "/mainSlider/BannerShakira.png",
-        "mobileBanner": "/mainSlider/BannerShakiraMobile.png",
-        "artistiImage":"/catalogo/SH.png",
-        "url": "https://www.eticket.co/eventos.aspx?idartista=793&utm_source=ocesawebpage&utm_medium=referral+",
-        "descripcion": "Shakira es una cantante, compositora, productora discográfica, bailarina, modelo, empresaria, actriz, embajadora de buena voluntad de la UNICEF y filántropa colombiana. Ha sido descrita como la artista más exitosa de América Latina y una de las más influyentes en el mundo.",
-        "btnText": "Comprar",
-        "availability": true
-
-    }, 
-    {
-        "name": "Andrea Bocelli",
-        "banner": "/mainSlider/AndreaBanner.png",
-        "mobileBanner": "/mainSlider/AndreaBannerMobile.png",
-        "artistiImage":"/catalogo/AB.png",
-        "url": "https://www.eticket.co/eventos.aspx?idartista=804&utm_source=ocesawebpage&utm_medium=referral+",
-        "descripcion": "Andrea Bocelli, el tenor italiano más aclamado, respetado y galardonado de la historia anunció su regreso a la capital colombiana. Celebrará tres décadas de un extraordinario legado musical con el concierto más grande que ha dado en nuestro país el próximo viernes 21 de febrero de 2025 desde el estadio El Campín de Bogotá.",
-        "btnText": "Comprar",
-        "availability": false
-
     }
+    
 ]

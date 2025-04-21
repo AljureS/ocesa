@@ -1,5 +1,17 @@
 [
     {
+        "name": "Dua Lipa",
+        "artistiImage":"events/miniaturaDuaLipa.png",
+        "url": "https://www.ticketmaster.co/event/dua-lipa",
+        "available": false
+    },
+    {
+        "name": "Linkin Park",
+        "artistiImage":"events/miniaturaLinkinPark.png",
+        "url": "https://www.ticketmaster.co/event/linkin-park",
+        "available": false
+    },
+    {
         "name": "Jurrasic World",
         "artistiImage":"events/miniaturaJurrasicWorld.jpg",
         "url": "https://www.eticket.co/eventos.aspx?idartista=840",
@@ -46,18 +58,6 @@
         "artistiImage":"events/MiniaturaTheWeeknd.jpg",
         "url": "https://www.eticket.co/?utm_source=ocesa&utm_medium=banner+&utm_campaign=ocesa_events+",
         "available": false 
-    },
-    {
-        "name": "Cirque du Soleil Messi10",
-        "artistiImage":"events/MiniaturaMessi10.jpg",
-        "url": "https://www.eticket.co/?utm_source=ocesa&utm_medium=banner+&utm_campaign=ocesa_events+",
-        "available": false
-    },
-    {
-        "name": "Alicia Keys",
-        "artistiImage":"events/miniatuiraAlicicaKeys.jpg",
-        "url": "https://www.eticket.co/?utm_source=ocesa&utm_medium=banner+&utm_campaign=ocesa_events+",
-        "available": false
     }
     
 ]
