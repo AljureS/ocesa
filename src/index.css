@@ -286,3 +286,15 @@
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
+
+@media screen and (max-width: 768px) {
+  #loader {
+  
+    position: absolute;
+    top: 52vw;
+    margin-left: -4.4rem;
+    /* margin-right: 20rem; */
+    /* left: 41%; */
+   
+  }
+}
