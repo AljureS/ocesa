@@ -11,7 +11,7 @@ const Button2 = ({ botonInfo }) => {
             <span className="actual-text">&nbsp;{btnText}&nbsp;</span>
             {
                 !availability ? true :  <span aria-hidden="true" data-text={btnText} className="hover-text">&nbsp;{btnText}&nbsp;</span>
-            }
+            } 
         </button>
     )
 }

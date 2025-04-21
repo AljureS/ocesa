@@ -44,7 +44,7 @@ const VerticalSlider = () => {
         };
     }, []);
 
-    return (
+    return ( 
         <div ref={containerRef} className="container-vertical-slider">
             <section className="image section-1">
                 <CardEvent evento = {events[0]}></CardEvent>
