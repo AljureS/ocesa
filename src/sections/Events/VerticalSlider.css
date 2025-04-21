@@ -84,3 +84,9 @@
       /* verde más claro al final */
   );
 }
+
+@media screen and (max-width: 768px) {
+    .section-1 img {
+        height: 60vh;
+      }
+}
