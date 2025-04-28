@@ -20,43 +20,43 @@
     {
         "name": "Shakira",
         "artistiImage":"events/miniaturaShakira.jpg",
-        "url": "https://www.eticket.co/eventos.aspx?idartista=793&utm_source=ocesawebpage&utm_medium=referral+",
+        "url": "https://www.ticketmaster.co/",
         "available": true
     },
     {
         "name": "Andrea Bocelli",
         "artistiImage":"events/miniaturaAndreaBocelli.jpg",
-        "url": "https://www.eticket.co/eventos.aspx?idartista=804&utm_source=ocesawebpage&utm_medium=referral+",
+        "url": "https://www.ticketmaster.co/",
         "available": true
     },
     {
         "name": "Aventura",
         "artistiImage": "events/miniaturaAventura.jpg",
-        "url": "https://www.eticket.co/?utm_source=ocesa&utm_medium=banner+&utm_campaign=ocesa_events+",
+        "url": "https://www.ticketmaster.co/",
         "available": false
     },
     {
         "name": "Paul McCartney",
         "artistiImage": "events/miniaturaPaulMcCartney.jpg",
-        "url": "https://www.eticket.co/?utm_source=ocesa&utm_medium=banner+&utm_campaign=ocesa_events+",
+        "url": "https://www.ticketmaster.co/",
         "available": false
     },
     {
         "name": "Ferxxo",
         "artistiImage":"events/miniaturaFerxxo.jpg",
-        "url": "https://www.eticket.co/?utm_source=ocesa&utm_medium=banner+&utm_campaign=ocesa_events+",
+        "url": "https://www.ticketmaster.co/",
         "available": false
     },
     {
         "name": "RBD",
         "artistiImage":"events/miniaturaRBD.jpg",
-        "url": "https://www.eticket.co/?utm_source=ocesa&utm_medium=banner+&utm_campaign=ocesa_events+",
+        "url": "https://www.ticketmaster.co/",
         "available": false
     },
     {
         "name": "The Weeknd",
         "artistiImage":"events/MiniaturaTheWeeknd.jpg",
-        "url": "https://www.eticket.co/?utm_source=ocesa&utm_medium=banner+&utm_campaign=ocesa_events+",
+        "url": "https://www.ticketmaster.co/",
         "available": false 
     }
     
