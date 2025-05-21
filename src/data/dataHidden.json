@@ -1,5 +1,27 @@
 [ 
     {
+        "name": "Green Day",
+        "banner": "/mainSlider/GreenDayBanner.jpg",
+        "mobileBanner": "/mainSlider/GreenDayBannerMobile.jpg",
+        "artistiImage":"/catalogo/GD.png",
+        "url": "https://www.ticketmaster.co/event/green-day",
+        "descripcion": "Green Day es una de las bandas más exitosas de todos los tiempos, con más de 75 millones de discos vendidos en todo el mundo y 10 mil millones de reproducciones de audio y video. Los cinco veces ganadores del premio Grammy llegan con The Saviors Tour a Vive Claro este 2025, celebrando 30 años de Dookie y 20 años de American Idiot.",
+        "btnText": "Comprar",
+        "availability": true
+
+    }, 
+    {
+        "name": "Bad Bunny",
+        "banner": "/mainSlider/BadBunnyBanner.jpg",
+        "mobileBanner": "/mainSlider/BadBunnyBannerMobile.jpg",
+        "artistiImage":"/catalogo/BB.png",
+        "url": "https://www.ticketmaster.co/event/bad-bunny-2026",
+        "descripcion": "Bad Bunny, tras romper récords con su residencia en Puerto Rico, anuncia el “DeBÍ TiRAR MáS FOToS World Tour”: 23 fechas del 21 noviembre 2025 en Santo Domingo al 22 julio 2026 en Bélgica, pasando por Medellín el 23 enero 2026 y visitando América Latina, Europa y debutando en Australia, Brasil y Japón.",
+        "btnText": "Comprar",
+        "availability": true
+
+    }, 
+    {
         "name": "Dua Lipa",
         "banner": "/mainSlider/DuaLipaBanner.png",
         "mobileBanner": "/mainSlider/DuaLipaBannerMobile.png",
