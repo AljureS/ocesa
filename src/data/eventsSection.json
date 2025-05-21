@@ -1,5 +1,17 @@
 [
     {
+        "name": "Green Day",
+        "artistiImage":"events/miniaturaGreenDay.jpg",
+        "url": "https://www.ticketmaster.co/event/green-day",
+        "available": false
+    },
+    {
+        "name": "Bad Bunny",
+        "artistiImage":"events/miniaturaBadBunny.jpg",
+        "url": "https://www.ticketmaster.co/event/bad-bunny-2026",
+        "available": false
+    },
+    {
         "name": "Dua Lipa",
         "artistiImage":"events/miniaturaDuaLipa.png",
         "url": "https://www.ticketmaster.co/event/dua-lipa",
@@ -46,18 +58,6 @@
         "artistiImage":"events/miniaturaFerxxo.jpg",
         "url": "https://www.ticketmaster.co/",
         "available": false
-    },
-    {
-        "name": "RBD",
-        "artistiImage":"events/miniaturaRBD.jpg",
-        "url": "https://www.ticketmaster.co/",
-        "available": false
-    },
-    {
-        "name": "The Weeknd",
-        "artistiImage":"events/MiniaturaTheWeeknd.jpg",
-        "url": "https://www.ticketmaster.co/",
-        "available": false 
     }
     
 ]
