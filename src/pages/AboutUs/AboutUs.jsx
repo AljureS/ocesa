@@ -1,6 +1,7 @@
 import React from 'react'
 import './AboutUs.css'
 import ScrollAnimation from 'react-animate-on-scroll'
+import Logos from '../../sections/Home/Logos/Logos'
 
 const AboutUs = () => {
     return (
@@ -31,7 +32,7 @@ const AboutUs = () => {
                 </div>
             </section>
 
-            <section className='contact'>
+            <section className='contact'> 
                 <ScrollAnimation animateIn="animate__flipInX" animateOut='animate__fadeOutUp'  animateOnce={false}>
                     <div className="outer">
                         <div className="dot"></div>
@@ -71,8 +72,8 @@ const AboutUs = () => {
 
             </section>
 
-            <section className='about-us-social-media'>
-            
+            <section className='about-us-sponsor'>
+                <Logos></Logos>
             </section>
         </>
     )

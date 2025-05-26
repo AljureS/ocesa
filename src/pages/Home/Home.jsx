@@ -13,7 +13,7 @@ const Home = () => {
                     <EventsSlider></EventsSlider>
                     <OcesaPlaylist></OcesaPlaylist>
                     <SocialMedia></SocialMedia>
-            
+                    
         </>
     )
 }
