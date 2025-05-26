@@ -5,7 +5,7 @@ import './SocialMedia.css'
 import { useSwipeable } from 'react-swipeable'
 import ScrollAnimation from 'react-animate-on-scroll'
 
-const SocialMedia = () => {
+const SocialMedia = () => { 
     const handlers = useSwipeable({
         onSwipedLeft: () => document.getElementById('social-container').scrollBy({ left: 300, behavior: 'smooth' }),
         onSwipedRight: () => document.getElementById('social-container').scrollBy({ left: -300, behavior: 'smooth' }),
