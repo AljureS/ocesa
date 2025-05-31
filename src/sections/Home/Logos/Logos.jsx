@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 
 const images = [
-    "/logos/logos2.png",
-    "/logos/logos1.png",
+    "/logos/logos11.png",
+    "/logos/APOYA.png",
     "/logos/logos3.png"
 ];
 
