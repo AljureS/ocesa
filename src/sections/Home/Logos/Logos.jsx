@@ -6,7 +6,7 @@ const images = [
     "/logos/logos3.png"
 ];
 
-const SLIDE_INTERVAL = 3000; // tiempo en milisegundos (3 segundos)
+const SLIDE_INTERVAL = 3000; 
 
 export default function Logos() {
     const [current, setCurrent] = useState(0);

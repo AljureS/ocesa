@@ -61,6 +61,12 @@ const VerticalSlider = () => {
             <section className="image section-5">
                 <CardEvent evento = {events[4]}></CardEvent>
             </section>
+            <section className="image section-6">
+                <CardEvent evento = {events[5]}></CardEvent>
+            </section>
+            <section className="image section-7">
+                <CardEvent evento = {events[6]}></CardEvent>
+            </section>
         </div>
     );
 };

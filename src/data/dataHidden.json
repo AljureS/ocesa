@@ -1,5 +1,27 @@
 [ 
     {
+        "name": "Guns N' Roses",
+        "banner": "/mainSlider/GunsBanner.png",
+        "mobileBanner": "/mainSlider/GunsBannerMobile.jpg",
+        "artistiImage":"/catalogo/GR.png",
+        "url": "https://www.ticketmaster.co/page/gunsnroses",
+        "descripcion": "Guns N’ Roses volverá a escribir su historia en Colombia con dos conciertos inolvidables: **el 7 de octubre en Bogotá, desde el Vive Claro, y el 11 de octubre en Medellín, en el Estadio Atanasio Girardot. **Tras sus memorables presentaciones en la capital en 1992 y 2022, y su paso por Medellín en 2016, Axl Rose, Slash y Duff McKagan regresan como parte de su gira “Because What You Want & What You Get Are Two Completely Different Things Tour”, consolidando el legado de una de las bandas eternas del rock and roll.",
+        "btnText": "Comprar",
+        "availability": true
+
+    }, 
+    {
+        "name": "Blessd",
+        "banner": "/mainSlider/BlessdBanner.png",
+        "mobileBanner": "/mainSlider/BlessdBannerMobile.png",
+        "artistiImage":"/catalogo/B.png",
+        "url": "https://www.ticketmaster.co/event/siempre-blessd",
+        "descripcion": "Blessd hará el concierto más grande de su historia el próximo 22 de noviembre en Vive Claro de Bogotá. Tras dos Sold Out en la capital en 2024 y su nuevo disco ‘Trinidad Bendita’ rompiendo en todos los charts, el reggaetonero paisa llegará en la cima de su carrera a este nuevo escenario. Respaldado por miles de millones de streams y una de las fanaticadas más fieles de Colombia, el Bendito marcará un nuevo hito en la historia del reggaetón hecho en Medellín.",
+        "btnText": "Comprar",
+        "availability": true
+
+    }, 
+    {
         "name": "Green Day",
         "banner": "/mainSlider/GreenDayBanner.jpg",
         "mobileBanner": "/mainSlider/GreenDayBannerMobile.jpg",
