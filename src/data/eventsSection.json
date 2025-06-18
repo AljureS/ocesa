@@ -1,5 +1,17 @@
 [
     {
+        "name": "Guns N' Roses",
+        "artistiImage":"events/miniaturaGuns.png",
+        "url": "https://www.ticketmaster.co/page/gunsnroses",
+        "available": false
+    },
+    {
+        "name": "Blessd",
+        "artistiImage":"events/miniaturaBlessd.png",
+        "url": "https://www.ticketmaster.co/event/siempre-blessd",
+        "available": false
+    },
+    {
         "name": "Green Day",
         "artistiImage":"events/miniaturaGreenDay.jpg",
         "url": "https://www.ticketmaster.co/event/green-day",
@@ -44,18 +56,6 @@
     {
         "name": "Aventura",
         "artistiImage": "events/miniaturaAventura.jpg",
-        "url": "https://www.ticketmaster.co/",
-        "available": false
-    },
-    {
-        "name": "Paul McCartney",
-        "artistiImage": "events/miniaturaPaulMcCartney.jpg",
-        "url": "https://www.ticketmaster.co/",
-        "available": false
-    },
-    {
-        "name": "Ferxxo",
-        "artistiImage":"events/miniaturaFerxxo.jpg",
         "url": "https://www.ticketmaster.co/",
         "available": false
     }

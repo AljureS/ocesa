@@ -21,18 +21,53 @@
   /* color: #fff; */
 }
 
-.section-1 img{
+.section-1{
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(
+    45deg,
+    #660000 0%,   /* granate oscuro */
+    #e10b0a 25%,  /* rojo vivo */
+    #ffe938 50%,  /* amarillo/dorado Guns N’ Roses */
+    #000000 75%,  /* negro profundo */
+    #660000 100%  /* vuelve al granate */
+  );
+  background-size: 400% 400%;
+  animation: gnrGradient 20s ease infinite;
+
+}
+@keyframes gnrGradient {
+  0%   { background-position:   0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position:   0% 50%; }
+}
+
+.section-2 {
+  background: linear-gradient(
+    to bottom,
+    #252526 0%,
+    #252526 60%,
+    #848383 70%,
+    #bebebe 80%,
+    #eaeaea 90%,
+    #d6d6d6 100%
+  );
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section-3 img {
   z-index: 100;
 }
-.section-1 {
+.section-3 {
   /* base rosa */
-  background-color: #E31E79;
+  background-color: #e31e79;
   position: relative;
   --min-deg: 0.1deg;
   --max-deg: 0.15deg;
   /* tu patrón de conic-gradients */
-  --general-gradient: 
-    repeating-conic-gradient(
+  --general-gradient: repeating-conic-gradient(
       from 0deg at 0% 0%,
       orange 0 var(--min-deg),
       blue var(--min-deg) var(--max-deg)
@@ -53,12 +88,12 @@
       blue var(--min-deg) var(--max-deg)
     );
 }
-.section-1 img{
+.section-3 img {
   position: relative;
   z-index: 0;
 }
 
-.section-1::before {
+.section-3::before {
   content: "";
   z-index: 0;
   position: absolute;
@@ -69,17 +104,17 @@
   background-blend-mode: difference;
 }
 
-.section-2 {
+.section-4 {
   /* degradado sencillo de tonos amarillos */
   background: linear-gradient(
     to right,
-    #FFF9C4 0%,   /* amarillo muy claro */
-    #FFEB3B 50%,  /* amarillo brillante */
-    #FBC02D 100%  /* amarillo oscuro */
+    #fff9c4 0%,
+    /* amarillo muy claro */ #ffeb3b 50%,
+    /* amarillo brillante */ #fbc02d 100% /* amarillo oscuro */
   );
 }
 
-.section-3 {
+.section-5 {
   color: #02adc0;
   position: relative;
   /* inset: 0; */
@@ -89,11 +124,11 @@
   background: radial-gradient(125% 125% at 50% 10%, #fff 40%, #02adc0 100%);
   /* z-index: -10; */
 }
-.section-3 img {
+.section-5 img {
   height: 84vh;
 }
 
-.section-4 {
+.section-6 {
   width: 100%;
   /* height: 100%; */
   /* Add your background pattern here */
@@ -130,7 +165,7 @@
 }
 
 /* La primera sección se muestra de forma normal */
-.section-5 {
+.section-7 {
   color: white;
   height: 100dvh;
 
@@ -144,7 +179,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .section-3 img {
-        height: 60vh;
-      }
+  .section-5 img {
+    height: 60vh;
+  }
 }
