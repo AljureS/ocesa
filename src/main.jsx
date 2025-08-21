@@ -29,5 +29,5 @@ function startApp() {
 }
 
 // Simula una carga (puedes quitar el setTimeout y llamar `startApp()` directamente si no necesitas esperar)
-// startApp()
+startApp()
 // startApp() // Descomentar si no necesitas el loader
